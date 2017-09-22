@@ -2,6 +2,7 @@
 
 @section('styles')
 <style type="text/css">
+
 /*bda*/
 #return-to-top {
     position: fixed;
@@ -46,8 +47,9 @@
 }
 /*sala*/
 ul li{
-    color: white;
-}   
+    color: black;
+}
+
 </style>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/rvslider.min.css') }}">
 <link href="{{asset('pop-slide/css/sequence-theme.pop-slide.css')}}" rel="stylesheet" media="all">
@@ -55,9 +57,11 @@ ul li{
 
 @section('content')
 {{-- go to top button --}}
+
 <a href="javascript:" id="return-to-top">
     <i class="chevron up icon"></i>
 </a>
+
 {{-- go to top button --}}
 <div class="row" style="padding-top:0">
    <div id="sequence" class="seq">
@@ -129,7 +133,7 @@ ul li{
         @lang('lang.presentation')  
     </div>
 </div>
-
+<hr style="width: 80%; border:1px solid rgb(96,178,231);">
 <div class="row">
     <CENTER> 
         <div class="ui blue large dividing header"> 

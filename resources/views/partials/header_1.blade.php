@@ -1,7 +1,7 @@
 <div class="row" style="border-bottom: 2px solid blue; padding:1.5em 0; margin: 0;">
   <div class="three wide column middle aligned">
     <a href="/">
-      <img src="{{asset("images/africa.jpg")}}" alt="images/synergie.png" class="ui left tiny centered image" id="logo_left">
+      <img src="{{asset("images/logo.png")}}" alt="logo" class="ui left tiny centered image" id="logo_left">
     </a>
     <div class="ui sidebar blue vertical menu" id="sidebar_navigation">
       {{-- 1 --}}
@@ -9,7 +9,6 @@
         <p class="ui blue small header">
          @lang('lang.home')
        </p>
-
      </a>
      {{-- 2 --}}
      <a class="item" href="/#videos">
@@ -37,12 +36,6 @@
     </p>
   </a>
   {{-- 6 --}}
-  <a class="item" href="/prog">
-    <p class="ui blue small header">
-      @lang('lang.prog')
-    </p>
-  </a>
-  {{-- 7 --}}
   <div class="ui pointing dropdown link item">
     <span class="text">Nos Filiérs</span>
     <i class="dropdown icon"></i>
@@ -70,43 +63,37 @@
        </p>
 
      </a>
-     {{-- 2 --}}
-      <a class="item" href="/prog">
-    <p class="ui blue small header">
-      @lang('lang.prog')
-    </p>
-  </a>
-    
-   {{-- 3 --}}
+
+   {{-- 2 --}}
    <a class="item" href="/#partenaires">
     <p class="ui blue small header">
       @lang('lang.header_partners')
     </p>
   </a>
-  {{-- 4 --}}
+  {{-- 3 --}}
   <a class="item" href="/photos">
     <p class="ui blue small header">
       @lang('lang.photo_l')
     </p>
   </a>
-  {{-- 5 --}}
+  {{-- 4 --}}
   <a class="item" href="/#videos">
       <p class="ui blue small header">
        @lang('lang.video_l')
      </p>
    </a>
-  {{-- 6 --}}
+  {{-- 5 --}}
     <a class="item" href="/contact">
     <p class="ui blue small header">
       @lang('lang.footer_contact')
     </p>
   </a>
 
-  {{-- 7 --}}
+  {{-- 6 --}}
   <div class="ui pointing dropdown link item">
     <span class="text">
       
-    <span class="ui blue  tiny header">Nos Filiérs</span>
+    <span class="ui blue  tiny header">Nos filières</span>
     </span>
     <i class="dropdown icon"></i>
     <div class="menu">

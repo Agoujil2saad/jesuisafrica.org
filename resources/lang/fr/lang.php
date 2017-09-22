@@ -98,21 +98,21 @@ return [
    'our_news' =>'Nos Actualités',
    'home' =>'Accueil',
    'presse' => 'Presse',
-   'photo_l' => 'Photothéque',
+   'photo_l' => 'Photothèque',
   'prog' => 'Programme',
   'mission_p' => '- Prendre part au dialogue et à la cohabitation entre cultures.<br>
 - Promouvoir l’investissement matériel et immatériel.<br>
 - Lancer un débat sur les politiques publiques.<br>
 - Créer une société moderne et développé à travers l’intégration des jeunes de toute nationalité dans la vie en generale',
-'presentation' => '<h1 class="ui centered header">L’association œuvre à réaliser les objectifs suivants :</h1>
+'presentation' => '<h1 class="ui  blue centered header">L’association œuvre à réaliser les objectifs suivants :</h1>
 <ul>
-<li><img src="images/white_dove.png" class="ui mini left floated image">
+<li><img src="images/blue_dove.png" class="ui mini left floated image">
 Œuvrer à consolider le développement des cultures africaines, à promouvoir le dialogue interculturel et la cohabitation religieuse au plan national et international.
 </li>
-<li><img src="images/white_dove.png" class="ui mini left floated image">
+<li><img src="images/blue_dove.png" class="ui mini left floated image">
 Mettre en valeur et gérer les talents des jeunes dans le but de réaliser une renaissance culturelle, artistique et sociale intégrée, à travers divers ateliers dans les domaines de l’environnement, du théâtre, de la musique et du sport.
 </li>
-<li><img src="images/white_dove.png" class="ui mini left floated image">
+<li><img src="images/blue_dove.png" class="ui mini left floated image">
 Rehausser le niveau de prise de conscience chez les jeunes et les inciter à assoir davantage de solidarité pour œuvrer dans le cadre de nobles causes au profit des peuples africains et des peuples du monde entier.
 </li><ul>',
 
