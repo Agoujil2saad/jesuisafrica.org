@@ -146,7 +146,7 @@ ul li{
                 <div class="ui blue ribbon label">
                     <i class="time icon"></i> 13/09/2017
                 </div>
-                <img src="{{asset('images/events/event1.png')}}"> 
+                <img src="{{asset('images/events/event1.jpg')}}"> 
             </div>
             <div class="content">
                 تنظم جمعية مفتاح السلام الدولية للتنمية والتضامن بشراكة مع المجلس الاستشاري للشباب الإفريقي و إدارة ملتقى الحوار والاستثمار الإفريقي،قافلة ثقافية ستجوب عدة دول افريقية تحمل اسم “السلم والسلام” و التي ستنظم بمناسبة احتفالات الشعب المغربي بعيد المسيرة الخضراء المظفرة
@@ -163,7 +163,7 @@ ul li{
                 <div class="ui blue ribbon label">
                     <i class="time icon"></i> 04/09/2017
                 </div>
-                <img src="{{asset('images/events/event2.png')}}"> 
+                <img src="{{asset('images/events/event2.jpg')}}"> 
             </div>
             <div class="content">
                 حتفل اعضاء المجلس الاستشاري للشاب الافريقي التابع  لجمعية مفتاح السلام الدولية للتنمية والتضامن بالامس في مقر الجمعية بالرباط ،بعيد الاضحى في أجواء من الفرح والتعايش بين الديانات الثلاثة ،
@@ -179,7 +179,7 @@ ul li{
                 <div class="ui blue ribbon label">
                     <i class="time icon"></i> 29/08/2017
                 </div>
-                <img src="{{asset('images/events/event3.png')}}"> 
+                <img src="{{asset('images/events/event3.jpg')}}"> 
             </div>
             <div class="content">
                 “مفتاح السلام” تنظم قافلة تضامنية بآيت حساين اوحدو بمناسبة ذكرى ثورة الملك والشعب
@@ -195,7 +195,7 @@ ul li{
                 <div class="ui blue ribbon label">
                     <i class="time icon"></i> 24/08/2017
                 </div>
-                <img src="{{asset('images/events/event4.png')}}"> 
+                <img src="{{asset('images/events/event4.jpg')}}"> 
             </div>
             <div class="content">
              شركة ألمانية كبرى تدعم مشروع الأكاديمية الإفريقية لكرة القدم في مكناس
@@ -226,7 +226,7 @@ ul li{
                 <div class="ui teal left ribbon label">
                     <i class="time icon"></i>14/09/2017
                 </div>
-                <img src="{{asset('images/news/news1.png')}}"> 
+                <img src="{{asset('images/news/news1.jpg')}}"> 
             </div>
             <div class="content">
                 تنظم  جمعية مفتاح السلام الدولية للتنمية والتضامن بشراكة مع المجلس الاستشاري للشباب الإفريقي و إدارة ملتقى الحوار والاستثمار الإفريقي،لقافلة ثقافة “السلم والسلام”، تفاعلا مع عودة المملكة المغربية إلى صف منظمة الاتحاد الإفريقي.
@@ -259,7 +259,7 @@ ul li{
                 <div class="ui teal left ribbon label">
                     <i class="time icon"></i>31/08/2017
                 </div>
-                <img src="{{asset('images/news/news3.png')}}"> 
+                <img src="{{asset('images/news/news3.jpg')}}"> 
             </div>
             <div class="content">
                 حل يوم 29 غشت 2017  وفدا  عن مكتب الدراسات الفرنسي المعتمد من الفيفا،بمطار محمد الخامس بالدار البيضاء  ،لتدارس مشروع بناء الاكاديمية الدولية “بانا افريقيا” لكرة القدم ،وكان في استقبالهم السيد خالد بودالي رئيس جمعية مفتاح السلام الدولية للتنمية والتضامن ،وإدارة ملتقى الحوار والاستثمار الافريقي ،وبعد التوجه الى مقر الجمعية بالرباط ،أعطيت مجموعة من الشروحات من طرف المكلفين بالمجلس الاستشاري للشباب الافريقي،حول اهداف الاكاديمية ،والمغزى من إنشائها فوق أرض مغربية
@@ -275,7 +275,7 @@ ul li{
                 <div class="ui teal left ribbon label">
                     <i class="time icon"></i> 30/08/2017
                 </div>
-                <img src="{{asset('images/news/news4.png')}}"> 
+                <img src="{{asset('images/news/news4.jpg')}}"> 
             </div>
             <div class="content">
                 رئيس ‘سيدياو’ الاقتصادية يعلن من الرباط أحقية المغرب لعضوية المجموعة
