@@ -1,0 +1,342 @@
+@import url(http://fonts.googleapis.com/css?family=Oxygen:700|Source+Sans+Pro:300);
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Anton');
+@import url('https://fonts.googleapis.com/css?family=Amiri|Cairo|Rakkas|Scheherazade');
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#register{
+    font-size: 20px;
+    position: absolute;
+    top:305px;
+    left: 820px;
+    width: 255px; 
+    z-index: 1;
+    color: #FFF;
+    background-color: #FF6600;
+    vertical-align: middle;
+}
+
+
+.slider_description{   
+    font-size: 1.5vw;
+    position: absolute;
+    top:3em;
+    left: 3em;
+    width: 40%;   
+    z-index: 1;
+    color: #FFF;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+
+#rubrique_pc{
+    width: 300px;
+    height: 450px;
+    position: absolute;
+    top:20px;
+    left: 800px;
+    z-index: 1;
+    color: #666666;     
+    background:url("../images/rubrique.png"); 
+    background-size: 300px 450px;
+}
+
+#message_principale{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7em;
+    display: block;
+    text-align: center;
+    position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+#centred_title{
+    font-family: 'Roboto', sans-serif;
+    margin:80px auto;
+    text-align: center;
+    width: 80%;
+    color:#FF6600;
+
+}
+#centred{
+   text-align: center;
+   width: 100%;
+}
+#chiffre_cles{
+    color: #FF6600;
+}
+
+#chiffre_cles > p{
+    text-align: center;
+    font-size: 0.8em;
+}
+#inline_image-slider{
+    max-width: 20%;
+    margin-left: 2%;
+    display: inline-block;
+}
+#partenaire_slider{
+    max-width: 700px;
+    margin:0px auto;
+    padding-left: 10%;
+}
+
+#footer_items .item{
+    color: white;
+    font-size: 1.1em;
+    padding: 8px 8px 8px 8px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+#footer_items .item:hover{
+    color: orange;
+}
+
+#footer_titles {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+#footer{
+   background-color: #21D4FD;
+background-image: -webkit-linear-gradient(289deg, #21D4FD 0%, #B721FF 100%);
+background-image: -o-linear-gradient(289deg, #21D4FD 0%, #B721FF 100%);
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+    width:100%;
+    padding:2em 0;
+}
+.footer_list{
+    list-style: none;
+    color: white;
+    margin-top: 4em;
+}
+.footer_list > li{
+    margin-bottom: 1em;
+}
+.footer_img{
+    width: 64px;
+}
+
+#copyright{ 
+  color: white;
+  padding-top: 20px;
+  margin-top: 43px;
+  font-size: 17px;
+}
+
+/*h*/
+.el-carousel__item img { 
+    width:200px; 
+    line-height: 200px;
+    margin: 0;
+  }
+
+  .el-carousel__item:nth-child(2n) {
+   
+  }
+
+  .el-carousel__item:nth-child(2n+1) {
+
+  }
+  .main-title{
+    font-family:'Lato', sans-serif;
+    font-size: 1.5em;
+    padding:1em;
+    color:white;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: .1em;
+    width: 100%;
+    height: 100%;
+}
+
+b{
+    color:#000;
+}
+
+.main-title:lang(ar){
+  letter-spacing: 0;
+}
+a:lang(ar){
+        font-family: 'Cairo', "Tamil MN", serif;
+        font-size: 120%;
+        font-weight: 600;
+}
+.ui.orange.button:lang(ar){
+        font-family: 'Cairo', "Tamil MN", serif;
+}
+p:lang(ar){
+    font-family: 'Cairo', "Tamil MN", serif;
+    color:black;
+}
+.seq .seq-title h2:lang(ar){
+    font-family: 'Cairo', "Tamil MN", serif;
+    font-size: 1.4em;
+    text-align:right;
+}
+b:lang(ar){
+     font-family: 'Cairo', "Tamil MN", serif;
+     font-size: 120%;
+     color:#660099;
+     
+}
+h2:lang(ar){
+    font-family: 'Cairo', "Tamil MN", serif;
+    font-size: 1.4em; 
+    color:#660099;
+}
+.ui.orange.header:lang(ar){
+    font-family: 'Cairo', "Tamil MN", serif;
+     font-size: 120%;
+     color:#660099;
+}
+ul{
+  list-style-type: none;
+}
+
+ul li {
+  padding: 0.9em 0;
+  text-align: left;
+  font-size: 1.2em;
+}
+
+ul li:lang(ar){
+       font-family: 'Cairo', "Tamil MN", serif;
+       font-size: 110%;
+       text-align: right;
+}
+h2.ui.header :lang(ar){
+    font-family: 'Cairo', "Tamil MN", serif;
+    font-size: 110%;
+    text-align: right;
+}
+h1.ui.header{
+    font-family: 'Cairo', "Tamil MN", serif;
+    text-align: center;
+    padding:20px;
+}
+/*qui somme nous page*/
+ .initiative_list:lang(ar)
+      {
+      list-style: none;
+      }
+
+/* styling search algolia */
+.el-dropdown-menu__item {
+    width:100% !important;
+    }
+    /*all projet*/
+    .badge {
+    float: right;
+    }
+
+.ais-powered-by {
+  float: right;
+  line-height: 26px;
+}
+
+.ais-powered-by  svg {
+    vertical-align: bottom;
+  }
+  .ais-stats {
+  line-height: 36px;
+}
+/* Price Range */
+
+.ais-price-range__input--from,
+.ais-price-range__input--to {
+  width: 65px;
+  display: inline;
+  border:0;
+  border-radius:4px;
+}
+
+.ais-price-range__input--from:focus,
+.ais-price-range__input--to:focus{
+-webkit-box-shadow: orange;
+        box-shadow: orange;
+         border:0;
+}
+
+/* Clear Search */
+
+.ais-clear--disabled {
+  display: none;
+}
+
+.ais-input{
+   display:inline;
+   width:100%;
+   border:0;
+   font-size: 1.2rem;
+   font-family: "Roboto";
+border-radius:4px;
+    padding: 10px;
+}
+.ais-input:focus{
+    border:0;
+-webkit-box-shadow: orange;
+        box-shadow: orange;
+      border:0;
+ border-radius:4px;
+}
+
+.ais-sort-by-selector{
+    max-width: 30%;
+    font-size: 1.2rem;
+    display:inline;
+    border:0;
+    border-radius:4px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    opacity: .8;
+}
+.ais-results-per-page-selector{
+    max-width: 15%;
+    font-size: 1.2rem;
+    border:0;
+    border-radius:4px;
+    cursor: pointer;
+    opacity: .8;
+    
+}
+
+
+.ais-sort-by-selector:focus{
+   border:0;
+    box-shadow: .1px -.1px 2px 1px #ea9d35;
+        
+}
+.ais-results-per-page-selector:focus{
+  border:0;
+   box-shadow: .1px -.1px 2px 1px #ea9d35;
+}
+.ais-results{
+  display: block;
+}
+
+.ui.statistics>.statistic {
+flex:1 1 auto;
+}
+
+.ui.blue.dividing.header{
+  margin:2em 0;
+}
+#present{
+     background-color: #21D4FD;
+background-image: -webkit-linear-gradient(289deg, #21D4FD 0%, #B721FF 100%);
+background-image: -o-linear-gradient(289deg, #21D4FD 0%, #B721FF 100%);
+background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+
+.seq .seq-pagination li{
+    text-align: center;
+  }
