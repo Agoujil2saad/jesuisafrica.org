@@ -183,11 +183,12 @@
 
 <div class="row" id="present">
     <div class="twelve wide column">
- <h1 class="ui header">Phototéque</h1>
+ <h1 class="ui header">
+ 	<i class=" orange grid layout icon"></i>Phototéque</h1>
     </div>
 </div>
 
-<div class="row">
+<div class=" divided row">
 	<div class="four wide column">
 		<center id="sticker">
 			<div class="ui mini vertical labeled icon menu">

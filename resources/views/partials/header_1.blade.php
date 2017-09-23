@@ -1,4 +1,4 @@
-<div class="row" style="border-bottom: 2px solid blue; padding:1.5em 0; margin: 0;">
+<div class="row" style="border-bottom: 2px solid rgb(96,178,231); padding-top:1.1em; padding-bottom:0em; margin: 0;">
   <div class="three wide column middle aligned">
     <a href="/">
       <img src="{{asset("images/logo.png")}}" alt="logo" class="ui left tiny centered image" id="logo_left">
