@@ -87,7 +87,9 @@ ul li{
 
 <li class="seq-step2">
   <div data-seq class="seq-title">
-    <h2>Défendre les libertés individuelles, les grandes causes nationales et l’intégrité territoriale des nations.</h2>
+    <h2>
+    Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l'association internationnal de la paix et ses rôles est d'appuyer l'association auprès des organisations footballistique
+    </h2>
 </div>
 
 </li>
@@ -96,18 +98,9 @@ ul li{
   <div data-seq class="seq-title">
     <h2>Mettre en valeur et gérer les talents des jeunes dans le but de réaliser une renaissance culturelle, artistique et sociale intégrée, à travers divers ateliers dans les domaines de l’environnement, du théâtre, de la musique et du sport.</h2>
 </div>
-
 </li>
 
 <li class="seq-step4">
-    <div data-seq class="seq-title">
-        <h2>صور من القافلة التضامنية لجمعية مفتاح السلام الدولية والتي استقبلتها جمعية أسوريف بدوار آيت حساين اوحدو يوم الاحد 27 غشت 2017، بحضور ممثلين عن دول إفريقية وضيوف مغاربة لتأثيث أرضية بناء مركب سوسيورياضي للقرب بالدوار.</h2>
-    </div>
-
-
-</li>
-
-<li class="seq-step5">
   <div data-seq class="seq-title">
     <h2>Le projet de l'Académie sportive panafricaine a été lancé officiellement à Meknès, en présence de nombreux intellectuels, opérateurs économiques et personnalités sportives marocaines et étrangères.</h2>
 </div>
@@ -118,11 +111,10 @@ ul li{
 
 <ul role="navigation" aria-label="Pagination" class="seq-pagination">
   <li><a href="#step0" rel="step0" title="Message du roi Mohammed 6">Message du roi Mohammed 6</a></li>
-  <li><a href="#step1" rel="step1" title="Rencontre avec l'ambassadeur du sénégal">Rencontre avec l'ambassadeur du sénégal</a></li>
+  <li><a href="#step1" rel="step1" title="Rencontre avec l'ambassadeur du sénégal">Diplomatie</a></li>
   <li><a href="#step2" rel="step2" title="Forum du Dialogue et de l’Investissement">Forum du Dialogue et de l’Investissement</a></li>
   <li><a href="#step3" rel="step3" title="Les jeunes talents">Les jeunes talents</a></li>
-  <li><a href="#step4" rel="step4" title="Caravane de solidarité">Caravane de solidarité</a></li>
-  <li><a href="#step5" rel="step5" title="Afrique Unie">Afrique Unie</a></li>
+  <li><a href="#step4" rel="step4" title="Afrique Unie">Afrique Unie</a></li>
 </ul>
 </div>  
 </div>
@@ -331,30 +323,12 @@ ul li{
 
 <div class="row">
     <center> 
-
         <div class="ui blue large dividing header"> 
-            <i class="twitter blue icon"></i>
-            @lang('lang.twitter')
-        </div>
-    </center>
-</div>
-
-<div class="row" >
-    <div class="eleven wide column">
-        <a class="twitter-timeline" data-width="800" data-height="500" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/asclepaix">Tweets Par association cle de la paix</a>
-    </div>
-</div>
-
-<div class="row">
-    <center> 
-
-        <div class="ui blue large dividing header" id="videos"> 
-            <i class="film blue icon"></i>
+            <i class="film icon"></i>
             @lang('lang.video_l')
         </div>
     </center>
-</div>
-
+</div> 
 
 
 @endsection
@@ -440,6 +414,24 @@ ul li{
         </a>
     </div>
     <a class="rvs-nav-next"></a>
+</div>
+</div>
+
+
+<div class="ui centered grid">
+    <div class="row">
+    <center> 
+
+        <div class="ui blue large dividing header"> 
+            <i class="twitter blue icon"></i>
+            @lang('lang.twitter')
+        </div>
+    </center>
+</div> 
+    <div class="row" >
+    <div class="eleven wide column">
+        <a class="twitter-timeline" data-width="800" data-height="500" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/asclepaix">Tweets Par association cle de la paix</a>
+    </div>
 </div>
 </div>
 @endsection

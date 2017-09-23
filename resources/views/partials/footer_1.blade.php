@@ -61,6 +61,10 @@
             </div>
         </div>
         <hr>
-        <div id="copyright">Copyright © 2017-Association Internationale Clé Pour la Paix</div>
+        <div id="copyright">Copyright © 2017-Association Internationale Clé Pour la Paix
+         <div class="created_by">conception et code <a href="">MD-SYNERY</a>
+        </div>
+    </div>
+
     </div>
 </div>

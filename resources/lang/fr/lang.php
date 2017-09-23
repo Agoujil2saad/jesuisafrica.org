@@ -28,6 +28,7 @@ return [
   'all_projets'=> 'Tous Les Projets',
   'learn_more' => 'SAVOIR PLUS',
         // header
+  'header-inst' => 'Nos Institutions',
   'header_us' =>'Qui Sommes-nous?',
   'header_projets' => 'Nos Projets',
   'header_partners' => 'Nos Partenaires',

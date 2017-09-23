@@ -23,6 +23,7 @@ return [
  'all_projets' => 'ﺟﻤﻴﻊ اﻟﻤﺸﺎﺭﻳﻊ',
  'learn_more' => 'ﺃﻋﺮﻑ ﺃﻛﺜﺮ',
 // header
+ 'header-inst' => 'مؤسساتنا',
  'header_us' => 'ﻣﻦ ﻧﺤﻦ؟',
  'header_projets' => 'ﻣﺸﺎﺭﻳﻌﻨﺎ',
  'header_partners' => 'ﺷﺮﻛﺎﺅﻧﺎ',

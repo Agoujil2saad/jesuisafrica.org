@@ -55,7 +55,7 @@
 </div>
 
 <div class="eleven wide column middle aligned" id="navigation_menu">
-  <div class="ui seven item secondary menu">
+  <div class="ui six compact item secondary menu">
 
    <a class="item" href="/">
         <p class="ui blue small header">
@@ -83,23 +83,28 @@
      </p>
    </a>
   {{-- 5 --}}
-    <a class="item" href="/contact">
-    <p class="ui blue small header">
-      @lang('lang.footer_contact')
-    </p>
-  </a>
+ <div class="ui pointing dropdown link item">
+    <span class="text">
+      
+    <span class="ui blue  tiny header">@lang('lang.header_projets')</span>
+    </span>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+            <div class="item">Caravane culturelle et de l'intégration africaine</div>
+            <div class="item"> Forum du dialogue et de l'investissement</div>
+            <div class="item"> Académique Panafricaine de Football</div>
+            <div class="item"> Radio-Tv</div>
+      </div>
+  </div>
 
   {{-- 6 --}}
   <div class="ui pointing dropdown link item">
     <span class="text">
-      
-    <span class="ui blue  tiny header">Nos filières</span>
+      <span class="ui blue  tiny header">Nos Institutions</span>
     </span>
     <i class="dropdown icon"></i>
     <div class="menu">
-            <div class="item">filiérs_1</div>
-            <div class="item">filiérs_2</div>
-            <div class="item">filiérs_3</div>
+            <a class="item"> Le Conseil Consultatif de la Jeunesse Africaine </a>
       </div>
   </div>
 
