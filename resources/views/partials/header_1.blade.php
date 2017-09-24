@@ -4,47 +4,64 @@
       <img src="{{asset("images/logo.png")}}" alt="logo" class="ui left tiny centered image" id="logo_left">
     </a>
     <div class="ui sidebar blue vertical menu" id="sidebar_navigation">
-      {{-- 1 --}}
-      <a class="item" href="/">
+     
+   <a class="item" href="/">
         <p class="ui blue small header">
          @lang('lang.home')
        </p>
-     </a>
-     {{-- 2 --}}
-     <a class="item" href="/#videos">
-      <p class="ui blue small header">
 
-       @lang('lang.video_l')
-     </p>
-   </a>
-   {{-- 3 --}}
-   <a class="item" href="/contact">
+     </a>
+
+   {{-- 2 --}}
+   <a class="item" href="/#partenaires">
     <p class="ui blue small header">
-      @lang('lang.footer_contact')
+      @lang('lang.header_partners')
     </p>
   </a>
-  {{-- 4 --}}
+  {{-- 3 --}}
   <a class="item" href="/photos">
     <p class="ui blue small header">
       @lang('lang.photo_l')
     </p>
   </a>
+  {{-- 4 --}}
+  <a class="item" href="/#videos">
+      <p class="ui blue small header">
+       @lang('lang.video_l')
+     </p>
+   </a>
   {{-- 5 --}}
-  <a class="item" href="/#partenaires">
-    <p class="ui blue small header">
-      @lang('lang.header_partners')
-    </p>
-  </a>
-  {{-- 6 --}}
-  <div class="ui pointing dropdown link item">
-    <span class="text">Nos Filiérs</span>
+  <div class="item">
+    <div class="ui dropdown">
+    <span class="text">
+      
+    <span class="ui blue  tiny header">@lang('lang.header_projets')</span>
+    </span>
     <i class="dropdown icon"></i>
     <div class="menu">
-            <div class="item">filiérs_1</div>
-            <div class="item">Filiérs_2</div>
-            <div class="item">filiérs_3</div>
+            <div class="item">Caravane culturelle et de l'intégration africaine</div>
+            <div class="item"> Forum du dialogue et de l'investissement</div>
+            <div class="item"> Académique Panafricaine de Football</div>
+            <div class="item"> Radio-Tv</div>
       </div>
   </div>
+  </div>
+ 
+
+  {{-- 6 --}}
+<div class="item">
+  
+   <div class="ui dropdown">
+    <span class="text">
+      <span class="ui blue  tiny header">Nos Institutions</span>
+    </span>
+    <i class="dropdown icon"></i>
+    <div class="menu">
+            <a class="item"> Le Conseil Consultatif de la Jeunesse Africaine </a>
+      </div>
+  </div>
+ 
+</div>
 
 </div>
 <div class="pusher" id="pusher">

@@ -15,7 +15,7 @@ return [
   Vous souhaitez participer au développement de votre territoire<br>
   trouver des partenaires et gagner en visibilité ?<br>',
 
-  'name_of_app' => 'Association Internationale Clé Pour la Paix',
+  'name_of_app' => 'Association Internationale Clé De La Paix',
   'support_message' => 'vous accompagne <br>et facilite la réalisation de vos projets.',
   'deposer_projet' => 'Déposer mon projet',
   'decouvrir_projet' => 'DÉCOUVRIR LES PROJETS',
@@ -116,7 +116,7 @@ Mettre en valeur et gérer les talents des jeunes dans le but de réaliser une
 <li><img src="images/blue_dove.png" class="ui mini left floated image">
 Rehausser le niveau de prise de conscience chez les jeunes et les inciter à assoir davantage de solidarité pour œuvrer dans le cadre de nobles causes au profit des peuples africains et des peuples du monde entier.
 </li><ul>',
-
+ 
 'twitter' => 'Twitter',
 'message_roi' => 'Discours de S.M :"Nous sommes également conscients de notre volonté de créer des partenariats productifs avec eux, en fonction d\'investissements coordonnés et de programmes de développement entre les secteurs public et privé dans les pays concernés. Ceux qui connaissent la vérité et favorisent les exagérations, que le Maroc dépensent de l\'argent sur l\'Afrique, au lieu de dépenser sur les Marocains, ils ne veulent pas l\'intérêt du pays"',
 
