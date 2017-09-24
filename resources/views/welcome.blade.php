@@ -80,10 +80,12 @@ ul li{
     <li class="seq-step1 seq-in">
       <div data-seq class="seq-title">
         <center>
-            <h2>
-                    Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l'association internationale Clé de la Paix pour le Développement et la Solidarité.
-            
-        </h2>
+            <h2>   
+Le 1er Forum du Dialogue et de l’Investissement Africain <br>
+Sur le thème <br>
+« L’Afrique, coexistence et civilisation ».<br>
+29 – 30 Mars 2017 à Meknèss
+            </h2>
         </center>
     </div>
 </li>
@@ -104,7 +106,8 @@ ul li{
 
 <li class="seq-step4">
   <div data-seq class="seq-title">
-    <h2>Le projet de l'Académie sportive panafricaine a été lancé officiellement à Meknès, en présence de nombreux intellectuels, opérateurs économiques et personnalités sportives marocaines et étrangères.</h2>
+    <h2>
+     Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l'association internationale Clé de la Paix pour le Développement et la Solidarité.Ils soutiennent le projet d'Académie Panafricaine de Football.</h2>
 </div>
 
 </li>
@@ -113,10 +116,10 @@ ul li{
 
 <ul role="navigation" aria-label="Pagination" class="seq-pagination">
   <li><a href="#step0" rel="step0" title="Message du roi Mohammed 6"> S.M le Roi Mohammed VI</a></li>
-  <li><a href="#step1" rel="step1" title="Forum du Dialogue et de l’Investissement">Académie panafricaine de football</a></li>
+  <li><a href="#step1" rel="step1" title="Forum du Dialogue et de l’Investissement">Forum du dialogue et de l'investissement</a></li>
   <li><a href="#step2" rel="step2" title="Rencontre avec l'ambassadeur du sénégal">Conseil Consultatif de la Jeunesse Africaine</a></li>
-  <li><a href="#step3" rel="step3" title="Les jeunes talents">La Caravane</a></li>
-  <li><a href="#step4" rel="step4" title="Afrique Unie">Forum du dialogue et de l'investissement</a></li>
+  <li><a href="#step3" rel="step3" title="La Caravane">La Caravane</a></li>
+  <li><a href="#step4" rel="step4" title="Afrique Unie">Académie panafricaine de football</a></li>
 </ul>
 </div>  
 </div>

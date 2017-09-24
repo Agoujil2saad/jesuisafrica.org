@@ -49,7 +49,14 @@
   <script src="{{ asset('js/semantic.min.js') }}"></script>
   <script>
     $( ".ui.checkbox" ).checkbox();
-    $('.ui.dropdown').dropdown();
+    // $('.ui.dropdown').dropdown();
+    
+   $('.dropdown')
+  .dropdown({
+    action: 'nothing'
+  })
+;
+
     $("#pusher").click(()=>{
       $('.ui.sidebar')
       .sidebar('toggle')

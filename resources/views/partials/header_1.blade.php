@@ -102,7 +102,6 @@
   {{-- 5 --}}
  <div class="ui pointing dropdown link item">
     <span class="text">
-      
     <span class="ui blue  tiny header">@lang('lang.header_projets')</span>
     </span>
     <i class="dropdown icon"></i>
