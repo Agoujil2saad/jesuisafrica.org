@@ -99,7 +99,6 @@ ul li{
 
 <li class="seq-step3">
   <div data-seq class="seq-title">
-    <h2>Mettre en valeur et gérer les talents des jeunes dans le but de réaliser une renaissance culturelle, artistique et sociale intégrée, à travers divers ateliers dans les domaines de l’environnement, du théâtre, de la musique et du sport.</h2>
 </div>
 </li>
 
