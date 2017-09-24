@@ -81,7 +81,7 @@ ul li{
       <div data-seq class="seq-title">
         <center>
             <h2>
-                    Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l'association internationale Clé de la Paix pour le Développement et la Solidarité de la paix.
+                    Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l'association internationale Clé de la Paix pour le Développement et la Solidarité.
             
         </h2>
         </center>
