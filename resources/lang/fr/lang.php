@@ -104,7 +104,7 @@ return [
   'mission_p' => '- Prendre part au dialogue et à la cohabitation entre cultures.<br>
 - Promouvoir l’investissement matériel et immatériel.<br>
 - Lancer un débat sur les politiques publiques.<br>
-- Créer une société moderne et développé à travers l’intégration des jeunes de toute nationalité dans la vie en generale',
+- Créer une société moderne et développée à travers l’intégration des jeunes de toute nationalité dans la vie en generale',
 'presentation' => '<h1 class="ui  blue centered header">L’association œuvre à réaliser les objectifs suivants :</h1>
 <ul>
 <li><img src="images/blue_dove.png" class="ui mini left floated image">
@@ -118,7 +118,7 @@ Rehausser le niveau de prise de conscience chez les jeunes et les inciter à as
 </li><ul>',
 
 'twitter' => 'Twitter',
-'message_roi' => '"Nous sommes également conscients de notre volonté de créer des partenariats productifs avec eux, en fonction d\'investissements coordonnés et de programmes de développement entre les secteurs public et privé dans les pays concernés. Ceux qui connaissent la vérité et favorisent les exagérations, que le Maroc dépensent de l\'argent sur l\'Afrique, au lieu de dépenser sur les Marocains, ils ne veulent pas l\'intérêt du pays"',
+'message_roi' => 'Discours de S.M :"Nous sommes également conscients de notre volonté de créer des partenariats productifs avec eux, en fonction d\'investissements coordonnés et de programmes de développement entre les secteurs public et privé dans les pays concernés. Ceux qui connaissent la vérité et favorisent les exagérations, que le Maroc dépensent de l\'argent sur l\'Afrique, au lieu de dépenser sur les Marocains, ils ne veulent pas l\'intérêt du pays"',
 
 
 

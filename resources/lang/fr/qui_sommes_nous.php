@@ -6,7 +6,7 @@ return [
 
      <div class="row">
     <div class="ten wide column">
-       <h1> Association Internationale Clé Pour la Paix</h1>
+       <h1>  Association Clé de la Paix pour le Développement et la Solidarité</h1>
     </div>
     </div>
 

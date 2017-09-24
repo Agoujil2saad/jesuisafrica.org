@@ -80,7 +80,10 @@ ul li{
     <li class="seq-step1 seq-in">
       <div data-seq class="seq-title">
         <center>
-            <h2>@lang('lang.mission_p')</h2>
+            <h2>
+                    Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l'association internationale Clé de la Paix pour le Développement et la Solidarité de la paix.
+            
+        </h2>
         </center>
     </div>
 </li>
@@ -88,7 +91,7 @@ ul li{
 <li class="seq-step2">
   <div data-seq class="seq-title">
     <h2>
-    Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l'association internationnal de la paix et ses rôles est d'appuyer l'association auprès des organisations footballistique
+@lang('lang.mission_p')
     </h2>
 </div>
 
@@ -110,11 +113,11 @@ ul li{
 </div>
 
 <ul role="navigation" aria-label="Pagination" class="seq-pagination">
-  <li><a href="#step0" rel="step0" title="Message du roi Mohammed 6">Message du roi Mohammed 6</a></li>
-  <li><a href="#step1" rel="step1" title="Rencontre avec l'ambassadeur du sénégal">Diplomatie</a></li>
-  <li><a href="#step2" rel="step2" title="Forum du Dialogue et de l’Investissement">Forum du Dialogue et de l’Investissement</a></li>
-  <li><a href="#step3" rel="step3" title="Les jeunes talents">Les jeunes talents</a></li>
-  <li><a href="#step4" rel="step4" title="Afrique Unie">Afrique Unie</a></li>
+  <li><a href="#step0" rel="step0" title="Message du roi Mohammed 6"> S.M le Roi Mohammed VI</a></li>
+  <li><a href="#step1" rel="step1" title="Forum du Dialogue et de l’Investissement">Académie panafricaine de football</a></li>
+  <li><a href="#step2" rel="step2" title="Rencontre avec l'ambassadeur du sénégal">Conseil Consultatif de la Jeunesse Africaine</a></li>
+  <li><a href="#step3" rel="step3" title="Les jeunes talents">La Caravane</a></li>
+  <li><a href="#step4" rel="step4" title="Afrique Unie">Forum du dialogue et de l'investissement</a></li>
 </ul>
 </div>  
 </div>
@@ -323,7 +326,7 @@ ul li{
 
 <div class="row">
     <center> 
-        <div class="ui blue large dividing header"> 
+        <div class="ui blue large dividing header" id="videos"> 
             <i class="film icon"></i>
             @lang('lang.video_l')
         </div>
