@@ -53,7 +53,7 @@
   
    <div class="ui dropdown">
     <span class="text">
-      <span class="ui blue  tiny header">Nos Institutions</span>
+      <span class="ui blue  tiny header">@lang('lang.header-inst')</span>
     </span>
     <i class="dropdown icon"></i>
     <div class="menu">
@@ -116,7 +116,7 @@
   {{-- 6 --}}
   <div class="ui pointing dropdown link item">
     <span class="text">
-      <span class="ui blue  tiny header">Nos Institutions</span>
+      <span class="ui blue  tiny header">@lang('lang.header-inst')</span>
     </span>
     <i class="dropdown icon"></i>
     <div class="menu">

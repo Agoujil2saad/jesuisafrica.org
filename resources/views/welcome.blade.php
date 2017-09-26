@@ -80,12 +80,7 @@ ul li{
     <li class="seq-step1 seq-in">
       <div data-seq class="seq-title">
         <center>
-            <h2>   
-Le 1er Forum du Dialogue et de l’Investissement Africain <br>
-Sur le thème <br>
-« L’Afrique, coexistence et civilisation ».<br>
-29 – 30 Mars 2017 à Meknèss
-            </h2>
+            <h2>@lang('lang.slide2')</h2>
         </center>
     </div>
 </li>
@@ -106,8 +101,7 @@ Sur le thème <br>
 
 <li class="seq-step4">
   <div data-seq class="seq-title">
-    <h2>
-     Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l'association internationale Clé de la Paix pour le Développement et la Solidarité.Ils soutiennent le projet d'Académie Panafricaine de Football.</h2>
+    <h2>@lang('lang.slide5')</h2>
 </div>
 
 </li>
@@ -115,11 +109,11 @@ Sur le thème <br>
 </div>
 
 <ul role="navigation" aria-label="Pagination" class="seq-pagination">
-  <li><a href="#step0" rel="step0" title="Message du roi Mohammed 6"> S.M le Roi Mohammed VI</a></li>
-  <li><a href="#step1" rel="step1" title="Forum du Dialogue et de l’Investissement">Forum du dialogue et de l'investissement</a></li>
-  <li><a href="#step2" rel="step2" title="Rencontre avec l'ambassadeur du sénégal">Conseil Consultatif de la Jeunesse Africaine</a></li>
-  <li><a href="#step3" rel="step3" title="La Caravane">La Caravane</a></li>
-  <li><a href="#step4" rel="step4" title="Afrique Unie">Académie panafricaine de football</a></li>
+  <li><a href="#step0" rel="step0" title="Message du roi Mohammed 6">@lang('lang.slide1_titre')</a></li>
+  <li><a href="#step1" rel="step1" title="Forum du Dialogue et de l’Investissement">@lang('lang.slide2_titre')</a></li>
+  <li><a href="#step2" rel="step2" title="Rencontre avec l'ambassadeur du sénégal">@lang('lang.slide3_titre')</a></li>
+  <li><a href="#step3" rel="step3" title="La Caravane">@lang('lang.slide4_titre')</a></li>
+  <li><a href="#step4" rel="step4" title="Afrique Unie">@lang('lang.slide5_titre')</a></li>
 </ul>
 </div>  
 </div>
@@ -300,30 +294,14 @@ Sur le thème <br>
     </center>
 </div>
 <div class="row">
-    <div class="seven wide column">
-        <div class="ui yellow segment">
-            <center>
-                <img src="{{asset('images/fifa.svg')}}" class="ui inline image" height="100">
-                <img src="{{asset('images/iam.png')}}" class="ui inline image" height="100">
-                <img src="{{asset('images/burger.jpg')}}" class="ui inline image" height="100">
-            </center>
+    <div class="nine wide column">
+        <div class="ui inverted blue segment">
+            <i class='inverted huge handshake icon'></i> 
+            <h1 style="display: inline; padding:5em;text-align: center;">
+                Devenir Notre Partenaire
+            </h1>
         </div>
     </div>
-    <div class="five wide column">
-        <div class="ui grey segment">
-            <center>
-             <img src="{{asset('images/lesieur.jpg')}}" class="ui inline image" height="100">
-             <img src="{{asset('images/ram.png')}}" class="ui inline image" height="100">
-         </center>
-     </div>
- </div>
- <div class="three wide column">
-    <div class="ui brown segment">
-        <center>
-         <img src="{{asset('images/pepsi.png')}}" class="ui inline image" height="100">
-     </center>
- </div>
-</div>
 </div>
 
 <div class="row">
@@ -369,6 +347,14 @@ Sur le thème <br>
                 جمعية مفتاح السلام تتضامن مع ساكنة أيت حساين احدو بإقليم بولمان
             </p>
             <a href="https://www.youtube.com/watch?v=2zhuDY6xRVc" class="rvs-play-video"></a>
+        </div>
+
+        <!-- new item -->
+        <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/PDbWoQqdxZ4/hqdefault.jpg)">
+            <p class="rvs-item-text">
+                جقناة الامازيغية واكبت اليوم الدراسي لمفتاح السلام الدولية لاعداد قافلة السلم والسلام نحو أديس أبابا
+            </p>
+            <a href="https://www.youtube.com/watch?v=PDbWoQqdxZ4" class="rvs-play-video"></a>
         </div>
     </div>
 </div>
@@ -417,6 +403,20 @@ Sur le thème <br>
 
             </small>
         </a>
+
+        <!-- new item -->
+        <a class="rvs-nav-item">
+            <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/PDbWoQqdxZ4/2.jpg)"></span>
+            <h4 class="rvs-nav-item-title">
+                قناة الامازيغية واكبت اليوم الدراسي لمفتاح السلام الدولية لاعداد قافلة السلم والسلام نحو أديس أبابا
+            </h4>
+            <small class="rvs-nav-item-credits">
+
+            </small>
+        </a>
+
+
+
     </div>
     <a class="rvs-nav-next"></a>
 </div>
