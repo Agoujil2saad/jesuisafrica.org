@@ -216,7 +216,7 @@
 			<div class="demo-gallery">
 				<h1 class="clearfix" id="galery1">Galerie 1</h1>
 				<ul id="lightgallery_1" class="list-unstyled row">
-					@for ($i = 1; $i < 50; $i++)
+					@for ($i = 1; $i < 80; $i++)
 					<li class=""  data-src="{{asset('images/galery/event1/event_one_'.$i.'.JPG')}}" data-sub-html="<h4>Association Internationale Clé Pour la Paix</h4>">
 						<a href="">
 							<img class="img-responsive" src="{{asset('images/galery/event1/thumbnails/event_one_'.$i.'_tn.jpg')}}">
@@ -229,7 +229,7 @@
 			<div class="demo-gallery">
 						<h1 class="clearfix" id="galery2">Galerie 2</h1>
 				<ul id="lightgallery_2" class="list-unstyled row">
-					@for ($i = 1; $i < 50; $i++)
+					@for ($i = 1; $i < 23; $i++)
 					<li class=""  data-src="{{asset('images/galery/event2/event_two_'.$i.'.JPG')}}" data-sub-html="<h4>Association Internationale Clé Pour la Paix</h4>">
 						<a href="">
 							<img class="img-responsive" src="{{asset('images/galery/event2/thumbnails/event_two_'.$i.'_tn.jpg')}}">
@@ -242,7 +242,7 @@
 			<div class="demo-gallery">
 				<h1 class="clearfix" id="galery3">Galerie 3</h1>
 				<ul id="lightgallery_3" class="list-unstyled row">
-					@for ($i = 1; $i < 50; $i++)
+					@for ($i = 1; $i < 45; $i++)
 					<li class=""  data-src="{{asset('images/galery/event3/event_three_'.$i.'.JPG')}}" data-sub-html="<h4>Association Internationale Clé Pour la Paix</h4>">
 						<a href="">
 							<img class="img-responsive" src="{{asset('images/galery/event3/thumbnails/event_three_'.$i.'_tn.jpg')}}">
@@ -255,7 +255,7 @@
 			<div class="demo-gallery">
 					<h1 class="clearfix" id="galery4">Galerie 4</h1>
 				<ul id="lightgallery_4" class="list-unstyled row">
-					@for ($i = 1; $i < 34; $i++)
+					@for ($i = 1; $i < 35; $i++)
 					<li class=""  data-src="{{asset('images/galery/event4/event_four_'.$i.'.JPG')}}" data-sub-html="<h4>Association Internationale Clé Pour la Paix</h4>">
 						<a href="">
 							<img class="img-responsive" src="{{asset('images/galery/event4/thumbnails/event_four_'.$i.'_tn.jpg')}}">

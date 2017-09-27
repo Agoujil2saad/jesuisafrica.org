@@ -124,7 +124,7 @@ Rehausser le niveau de prise de conscience chez les jeunes et les inciter à as
     « L’Afrique, coexistence et civilisation ».<br>
     29 – 30 Mars 2017 à Meknèss',
 
-'slide5' => 'Roger Milla , Amine Rbati , Youssef Mokhtari sont des  Ambassadeurs de l\'association internationale Clé de la Paix pour le Développement et la Solidarité.Ils soutiennent le projet d\'Académie Panafricaine de Football.',
+'slide5' => 'Roger Milla , Amine Rbati , Youssef Mokhtari, sont des  Ambassadeurs de l\'association internationale Clé de la Paix pour le Développement et la Solidarité.Ils soutiennent le projet d\'Académie Panafricaine de Football.',
 'slide1_titre' => 'S.M le Roi Mohammed VI',
 'slide2_titre' => 'Forum du dialogue et de l\'investissement',
 'slide3_titre' => 'Conseil Consultatif de la Jeunesse Africaine',

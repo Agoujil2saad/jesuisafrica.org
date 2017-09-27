@@ -29,7 +29,7 @@
       <p class="ui blue small header">
        @lang('lang.video_l')
      </p>
-   </a>
+</a>
   {{-- 5 --}}
   <div class="item">
     <div class="ui dropdown">
@@ -43,6 +43,7 @@
             <div class="item"> Forum du dialogue et de l'investissement</div>
             <div class="item"> Académique Panafricaine de Football</div>
             <div class="item"> Radio-Tv</div>
+            <div class="item"> Institut Des Relations Economique Africaine</div>
       </div>
   </div>
   </div>
@@ -109,7 +110,8 @@
             <div class="item">Caravane culturelle et de l'intégration africaine</div>
             <div class="item"> Forum du dialogue et de l'investissement</div>
             <div class="item"> Académique Panafricaine de Football</div>
-            <div class="item"> Radio-Tv</div>
+            <div class="item"> Radio-Tv ( voice of Africa )</div>
+            <div class="item"> Institut des Relations Economiques Maroco-Africaines</div>
       </div>
   </div>
 

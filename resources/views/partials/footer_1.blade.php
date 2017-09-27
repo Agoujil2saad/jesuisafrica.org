@@ -28,7 +28,7 @@
                 <div class="ui inverted link list" id="footer_items">
                     <a href="/qui_sommes_nous" class="item">@lang('lang.header_us')</a>
                     <a href="/contact" class="item">@lang('lang.footer_contact')</a>
-                    <a href="/team" class="item">@lang('lang.footer_team')</a>
+                     {{--     <a href="/team" class="item">@lang('lang.footer_team')</a> --}}
                   
                 </div>
             </div>
@@ -61,8 +61,8 @@
             </div>
         </div>
         <hr>
-        <div id="copyright">Copyright © 2017- 
-         <div class="created_by">conception et code <a href="">MD-SYNERY</a>@lang('lang.name_of_app')
+        <div id="copyright">Copyright © 2017-@lang('lang.name_of_app')
+         <div class="created_by">conception et code <a href="">MD-SYNERY</a>
         </div>
     </div>
 

@@ -6,14 +6,14 @@ return [
 
      <div class="row">
     <div class="ten wide column">
-       <h1>  Association Clé de la Paix pour le Développement et la Solidarité</h1>
+       <h1 style="font-family:Rouge Script,sans serif;font-size:5em;">  Association clé de la Paix pour le Développement et la Solidarité</h1>
     </div>
     </div>
 
     <div class="row">
     <div class="ten wide column">
-    <h2>Mission :</h2>
-    <ul>
+    <h2 style="font-family:Rouge Script,sans serif;font-size:4em;">Mission :</h2>
+    <ul style="list-style-image: url(images/blue_dove.png); ">
     <li> Prendre part au dialogue et à la cohabitation entre cultures.</li>
     <li> Promouvoir l’investissement matériel et immatériel.</li>
     <li> Lancer un débat sur les politiques publiques.</li>
@@ -24,15 +24,22 @@ return [
 
     <div class="row">
     <div class="ten wide column">
-    <h2>Vision :</h2>
-    Mettre en valeur l’élément humain et s’atteler à sa formation dans une approche participative pour le développement et la modernisation de la société.
+    <h2 style="font-family:Rouge Script,sans serif;font-size:4em;">Vision :</h2>
+    <ul style="list-style-image: url(images/blue_dove.png);">
+    <li>
+ Mettre en valeur l’élément humain et s’atteler à sa formation dans une approche participative pour le développement et la modernisation de la société.
+    </li>
+
+    </ul>
+   
+
     </div>
     </div>
 
     <div class="row"> 
     <div class="ten wide column">
-    <h2>  Principes :</h2>
-    <ul>
+    <h2 style="font-family:Rouge Script,sans serif;font-size:4em;">  Principes :</h2>
+    <ul style="list-style-image: url(images/blue_dove.png);">
     L’Association Internationale Clefs Pour la Paix prend l’engagement de réaliser ses objectifs en respectant les principes suivants :
     <b> Paix et Cohabitation</b> – <b>Liberté et Transparence </b>– <b>Démocratie participative</b> – <b>Crédibilité et Amitié </b>– <b>Solidarité, Dignité et Egalite</b>́
 
@@ -42,10 +49,11 @@ return [
 
     <li> Organiser des Débats, tables rondes, ateliers, et forums nationaux et internationaux, relativement aux domaines de l’environnement, la culture, l’immigration, l’économie, l’économie sociale sportive et celle ayant trait à la santé
     </li>
+    </ul>
+    <ul>
 
-<li>
-  <b>  L’association œuvre à réaliser les objectifs suivants :</b>
-</li>
+  <h2 style="font-family:Rouge Script,sans serif;font-size:3em;">  L’association œuvre à réaliser les objectifs suivants :</h2>
+
     <li> Oeuvrer à consolider le développement des cultures africaines, à promouvoir le dialogue interculturel et la cohabitation religieuse sur les plans national et international
     </li>
 
@@ -108,7 +116,7 @@ return [
     <li> Mettre en œuvre les prescriptions des traités, conventions et partenariats internationaux entérinés par le Royaume du Maroc, ainsi que ceux non gouvernementaux, et les lois nationales ayant trait aux domaines de la santé, du sport, de l’immigration, du développement, de l’économie, de la cohabitation, de l’environnement et des droits de l’Homme
     </li>
 
-    <li> Mettre en exergue le rayonnement religieux et la cohabitation culturelle qui sous- tendent l’action du Royaume du Maroc au sein de l’Afrique et dans le monde entier
+    <li> Mettre en exergue le rayonnement religieux et la cohabitation culturelle qui sous- tendent l’action du Royaume du Maroc au sein de l’Afrique et dans le monde entier.
 
     </li>
     </ul>
