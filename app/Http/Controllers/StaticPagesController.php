@@ -25,6 +25,10 @@ class StaticPagesController extends Controller
 	{
 		return view('qui_sommes_nous');
 	}
+	public function espace_presse()
+	{
+		return view('espace_presse');
+	}
 
 
 	public function language( $lang,

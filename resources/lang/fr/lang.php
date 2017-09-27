@@ -130,6 +130,7 @@ Rehausser le niveau de prise de conscience chez les jeunes et les inciter à as
 'slide3_titre' => 'Conseil Consultatif de la Jeunesse Africaine',
 'slide4_titre' => 'La Caravane',
 'slide5_titre' => 'Académie panafricaine de football',
+'presse' => 'Espace Presse',
 
 
 

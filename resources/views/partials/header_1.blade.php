@@ -1,5 +1,5 @@
 <div class="row" style="border-bottom: 2px solid rgb(96,178,231); padding-top:1.1em; padding-bottom:0em; margin: 0;">
-  <div class="three wide column middle aligned">
+  <div class="two wide column middle aligned">
     <a href="/">
       <img src="{{asset("images/logo.png")}}" alt="logo" class="ui left tiny centered image" id="logo_left">
     </a>
@@ -30,7 +30,13 @@
        @lang('lang.video_l')
      </p>
 </a>
-  {{-- 5 --}}
+{{-- 5 --}}
+  <a class="item" href="/espace_presse">
+      <p class="ui blue small header">
+       @lang('lang.presse')
+     </p>
+</a>
+  {{-- 6 --}}
   <div class="item">
     <div class="ui dropdown">
     <span class="text">
@@ -49,7 +55,7 @@
   </div>
  
 
-  {{-- 6 --}}
+  {{-- 7 --}}
 <div class="item">
   
    <div class="ui dropdown">
@@ -100,7 +106,13 @@
        @lang('lang.video_l')
      </p>
    </a>
-  {{-- 5 --}}
+   {{-- 5 --}}
+  <a class="item" href="/espace_presse">
+      <p class="ui blue small header">
+       @lang('lang.presse')
+     </p>
+</a>
+  {{-- 6 --}}
  <div class="ui pointing dropdown link item">
     <span class="text">
     <span class="ui blue  tiny header">@lang('lang.header_projets')</span>
@@ -115,7 +127,7 @@
       </div>
   </div>
 
-  {{-- 6 --}}
+  {{-- 7 --}}
   <div class="ui pointing dropdown link item">
     <span class="text">
       <span class="ui blue  tiny header">@lang('lang.header-inst')</span>
@@ -130,7 +142,7 @@
 </div>
 
 
-<div class="two wide middle aligned column">
+<div class="two wide middle aligned right floated column">
   <div class="ui dropdown">
     <i class="world icon"></i>
     <span class="text">
