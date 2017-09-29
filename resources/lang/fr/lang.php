@@ -10,13 +10,13 @@ return [
   « En dépit des progrès réalisés par notre pays,<br> ce qui me désole, c’est cette situation de précarité que vivent <br>certains de nos concitoyens dans les régions éloignées et enclavées <br>, surtout sur les sommets de l’Atlas et du Rif,<br> les zones sahariennes arides et les oasis <br> ainsi que certains villages dans les plaines et sur les côtes. <br>
   Nous avons conscience de l’ampleur <br>du déficit qui s’est accumulé depuis des décennies <br> dans ces régions, malgré toutes les initiatives <br> et tous les efforts qui ont été déployés. »',
 
-  'message_principale' => ' Vous êtes une association ou une coopérative de la province de <b>KENITRA ?</b> <br>
+  'message_principale' => ' Vous êtes une association ou une coopérative de la province de <b>KENITRA ?</b> <br>
   Vous portez un projet répondant á un besoin ?<br>
-  Vous souhaitez participer au développement de votre territoire<br>
-  trouver des partenaires et gagner en visibilité ?<br>',
+  Vous souhaitez participer au développement de votre territoire<br>
+  trouver des partenaires et gagner en visibilité́ ?<br>',
 
   'name_of_app' => 'Association Internationale Clé De La Paix',
-  'support_message' => 'vous accompagne <br>et facilite la réalisation de vos projets.',
+  'support_message' => 'vous accompagne <br>et facilite la réalisation de vos projets.',
   'deposer_projet' => 'Déposer mon projet',
   'decouvrir_projet' => 'DÉCOUVRIR LES PROJETS',
   'chiffre_cle' => 'DES CHIFFRES CLÉS',
@@ -32,10 +32,10 @@ return [
   'header_us' =>'Qui Sommes-nous?',
   'header_projets' => 'Nos Projets',
   'header_partners' => 'Nos Partenaires',
-  'header_events' => 'Nos Événements',
+  'header_events' => 'Nos Éventements',
   'header_connect' => 'Se connecter',
   'header_admin' => 'Admin',
-  'header_logout' => 'Se deconnecter',
+  'header_logout' => 'Se déconnecter',
   'header_myspace' => 'Mon espace',
         // espace porteur
   'my_pr' => 'Mon Projet',
@@ -57,7 +57,7 @@ return [
   'devenir_part' => 'devenir partenaire',
   'devenir_port' => 'devenir porteur de projet',
   'name' => 'votre nom',
-  'generale_condition' => 'J\'accepte les conditions générales d’utilisation de la plateforme',
+  'generale_condition' => 'J\'accepte les conditions générales d’utilisation de la plate-forme',
   'obligation_filling_message' => 'Tout les champs avec * doivent être obligatoirement remplis',
   'picture_of_event' => 'photo de la nouvelle',
   'title' => 'titre',
@@ -71,7 +71,7 @@ return [
   'footer_invi_particip' => 'Investissement Participatif',
   'follow_us' => 'SUIVEZ NOUS SUR',
   'access_denied' => 'ACCÈS REFUSÉ',
-  'like_message' => 'En cliquant sur le cœur avant tout, vous recevrez les nouvelles liées à ce projet et sera en mesure de chater avec le propriétaire du projet à partir de votre espace ',
+  'like_message' => 'En cliquant sur le cœur avant tout, vous recevrez les nouvelles liées à ce projet et sera en mesure de chatter avec le propriétaire du projet à partir de votre espace ',
         //formularie projet items
   'decriver_projet' => 'Décrivez-nous en détail votre projet',
   'montant_estime' => 'budget estimé en Dirham',
@@ -81,12 +81,12 @@ return [
   'projet_photos' => 'Photos de projet',
         //formulaire account items
   'user_name' => 'Nom du l\'utilisateur',
-  'user_email' => 'Email du l\'utilisateur',
-  'user_tel' => 'Telephone du l\'utilisateur',
+  'user_email' => 'Émail du l\'utilisateur',
+  'user_tel' => 'Téléphone du l\'utilisateur',
   'assoc_type' => 'catégorie de l\'association',
   'user_addresse' => 'Adresse',
   'func' => 'Fonction',
-  'region' => 'Region',
+  'region' => 'Région',
   'update' => 'mise à jour',
   'edit' => 'Modifier',
   'delete' => 'Supprimer',
@@ -131,7 +131,10 @@ Rehausser le niveau de prise de conscience chez les jeunes et les inciter à as
 'slide4_titre' => 'La Caravane',
 'slide5_titre' => 'Académie panafricaine de football',
 'presse' => 'Espace Presse',
-
+'media_l' => 'Médiathèque',
+'tv_l' => 'TV',
+'presse_l' => 'Presse Électronique',
+'enjoy_us' => 'Rejoignez-Nous',
 
 
 

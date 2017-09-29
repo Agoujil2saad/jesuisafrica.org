@@ -45,6 +45,7 @@ td,th{
 					</h3>
 				</td>
 			</tr>
+
 			<tr class="center aligned">
 				<td>
 					<i class="file pdf outline huge red icon"></i>
@@ -55,6 +56,18 @@ td,th{
 					</h3>
 				</td>
 			</tr>
+
+			<tr class="center aligned">
+				<td>
+					<i class="file pdf outline huge red icon"></i>
+				</td>
+				<td>
+					<h3>
+						<a href="{{asset('/pdfs/dossier_du_caravane.pdf')}}" target="_blank">Dossier Du Caravane</a>
+					</h3>
+				</td>
+			</tr>
+
 			<tr class="center aligned">
 				<td>
 					<i class="file pdf outline huge red icon"></i>
@@ -82,6 +95,26 @@ td,th{
 				<td>
 					<h3>
 						<a href="{{asset('/pdfs/meknes_rapport_ar.pdf')}}" target="_blank">التقرير التركيبي: لملتقى الحوار والاستثمار الافريقي الاول تحت شعار - افريقيا حضارات وتعايش</a>
+					</h3>
+				</td>
+			</tr>
+			<tr class="center aligned">
+				<td>
+					<i class=" image huge green icon"></i>
+				</td>
+				<td>
+					<h3>
+						<a href="{{asset('/logos/logo_forum.png')}}" target="_blank">Logo du Forum du Dialogue et de l’Investissement Africain </a>
+					</h3>
+				</td>
+			</tr>
+			<tr class="center aligned">
+				<td>
+					<i class="image huge green icon"> </i>
+				</td>
+				<td>
+					<h3>
+						<a href="{{asset('/logos/logo.png')}}" target="_blank">Logo d'Association Internationale Clefs De la Paix</a>
 					</h3>
 				</td>
 			</tr>

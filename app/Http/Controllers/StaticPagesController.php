@@ -33,10 +33,16 @@ public function __construct()
 		$active_page='/';
 		return view('qui_sommes_nous',compact('active_page'));
 	}
+
 	public function espace_presse()
 	{
 		$active_page='/espace_presse';
 		return view('espace_presse',compact('active_page'));
+	}
+
+	public function tv_videos()
+	{
+		return view('presse_audiovisuelle');
 	}
 
 

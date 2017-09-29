@@ -16,7 +16,9 @@ Route::get('/contact', 'StaticPagesController@contact');
 Route::get('/photos', 'StaticPagesController@photos');
 Route::get('/qui_sommes_nous', 'StaticPagesController@qui_sommes_nous');
 Route::get('/espace_presse', 'StaticPagesController@espace_presse');
-
+Route::get('/tv_videos', 'StaticPagesController@tv_videos');
+//Enjoy us Page 
+Route::get('/enjoy_us', 'EnjoyController@create');
 // change language route
 Route::get('language/{lang}', 'StaticPagesController@language')->where('lang', '[A-Za-z_-]+');
 
