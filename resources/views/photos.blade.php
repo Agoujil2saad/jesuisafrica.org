@@ -184,7 +184,7 @@
 <div class="row" id="present">
     <div class="twelve wide column">
  <h1 class="ui header">
- 	<i class=" orange grid layout icon"></i>Phototéque</h1>
+ 	<i class=" orange grid layout icon"></i>Photothèque</h1>
     </div>
 </div>
 
@@ -194,19 +194,19 @@
 			<div class="ui mini vertical labeled icon menu">
 				<a class="item" href="/photos#galery1">
 					<i class="camera retro icon blue"></i>
-					Evenement 1
+					 La création  du conseil consultatif de la jeunesse africaine et  Ftour Ramadan entre les religions
 				</a>
 				<a class="item" href="/photos#galery2">
 					<i class="camera retro icon blue"></i>
-					Evenement 2
+					 Visite du président du association clé de la paix au plusieurs consulat africaine 
 				</a>
 				<a class="item" href="/photos#galery3">
 					<i class="camera retro icon blue"></i>
-						Evenement 3
+						Lancement de l’académie panafricaine de sport Meknès
 				</a>
 				<a class="item" href="/photos#galery4">
 					<i class="camera retro icon blue"></i>
-					Evenement 4
+					Lancement de l’académie panafricaine de sport Meknès
 				</a>
 			</div>
 		</center>
