@@ -104,7 +104,7 @@ return [
   'mission_p' => '- Prendre part au dialogue et à la cohabitation entre cultures.<br>
 - Promouvoir l’investissement matériel et immatériel.<br>
 - Lancer un débat sur les politiques publiques.<br>
-- Créer une société moderne et développée à travers l’intégration des jeunes de toute nationalité dans la vie en generale',
+- Créer une société moderne et développée à travers l’intégration des jeunes.',
 'presentation' => '<h1 class="ui  blue centered header">L’association œuvre à réaliser les objectifs suivants :</h1>
 <ul>
 <li><img src="images/blue_dove.png" class="ui mini left floated image">
@@ -122,7 +122,7 @@ Rehausser le niveau de prise de conscience chez les jeunes et les inciter à as
 'slide2' => 'Le 1er Forum du Dialogue et de l’Investissement Africain <br>
     Sur le thème <br>
     « L’Afrique, coexistence et civilisation ».<br>
-    29 – 30 Mars 2017 à Meknèss',
+    29 – 30 Mars 2017 à Meknès',
 
 'slide5' => 'Roger Milla , Amine Rbati , Youssef Mokhtari, sont des  Ambassadeurs de l\'association internationale Clé de la Paix pour le Développement et la Solidarité.Ils soutiennent le projet d\'Académie Panafricaine de Football.',
 'slide1_titre' => 'S.M le Roi Mohammed VI',

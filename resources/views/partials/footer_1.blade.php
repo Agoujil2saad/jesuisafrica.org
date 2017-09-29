@@ -62,7 +62,7 @@
         </div>
         <hr>
         <div id="copyright">Copyright © 2017-@lang('lang.name_of_app')
-         <div class="created_by">conception et code <a href="">MD-SYNERY</a>
+         <div class="created_by">Conception et code <a href="">MD-SYNERGY</a>
         </div>
     </div>
 

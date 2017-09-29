@@ -311,9 +311,10 @@ ul li{
 <div class="row">
     <div class="nine wide column">
         <div class="ui inverted blue segment">
-            <i class='inverted huge handshake icon'></i> 
-            <h1 style="display: inline; padding:5em;text-align: center;">
-                Devenir Notre Partenaire
+            <h1 style="padding:2em 0;text-align:center;">
+                <i class='inverted large handshake icon'></i> 
+                <br>
+                Devenir Partenaire
             </h1>
         </div>
     </div>

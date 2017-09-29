@@ -13,6 +13,7 @@
   <style>
   #pusher{
     visibility: visible;
+    padding: 20px;
   }
   #navigation_menu{
     display: none;

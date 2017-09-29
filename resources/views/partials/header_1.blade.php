@@ -5,7 +5,7 @@
     </a>
     <div class="ui sidebar blue vertical menu" id="sidebar_navigation">
      
-   <a class="item" href="/">
+   <a class=" active item" href="/">
         <p class="ui blue small header">
          @lang('lang.home')
        </p>
@@ -78,10 +78,10 @@
 </div>
 </div>
 
-<div class="eleven wide column middle aligned" id="navigation_menu">
-  <div class="ui six compact item secondary menu">
+<div class="twelve wide column middle aligned">
+  <div class="ui seven compact blue pointing secondary menu" id="navigation_menu">
 
-   <a class="item" href="/">
+   <a class="{{$active_page == "/"?'active':''}} item" href="/">
         <p class="ui blue small header">
          @lang('lang.home')
        </p>
@@ -95,7 +95,7 @@
     </p>
   </a>
   {{-- 3 --}}
-  <a class="item" href="/photos">
+  <a class="{{$active_page == "/photos"?'active':''}} item" href="/photos">
     <p class="ui blue small header">
       @lang('lang.photo_l')
     </p>
@@ -107,7 +107,7 @@
      </p>
    </a>
    {{-- 5 --}}
-  <a class="item" href="/espace_presse">
+  <a class=" {{$active_page == "/espace_presse"?'active':''}} item" href="/espace_presse">
       <p class="ui blue small header">
        @lang('lang.presse')
      </p>
@@ -142,9 +142,8 @@
 </div>
 
 
-<div class="two wide middle aligned right floated column">
+<div class="two wide middle aligned column">
   <div class="ui dropdown">
-    <i class="world icon"></i>
     <span class="text">
       @if(App::getLocale()=="ar")
       <i class="ma flag"></i>
