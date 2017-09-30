@@ -8,28 +8,28 @@ use Mail;
 
 class StaticPagesController extends Controller
 {
-protected $active_page;
-public function __construct()
-{
-	$active_page='/';
-}
+	protected $active_page;
+	public function __construct()
+	{
+		$active_page='/';
+	}
 
 	public function index()
 	{
 		$active_page='/';
 		return view('welcome',compact('active_page'));
 	}
-		public function contact()
+	public function contact()
 	{
 		$active_page='/';
 		return view('contact',compact('active_page'));
 	}
-		public function photos()
+	public function photos()
 	{
 		$active_page='/photos';
 		return view('photos',compact('active_page'));
 	}
-		public function qui_sommes_nous()
+	public function qui_sommes_nous()
 	{
 		$active_page='/';
 		return view('qui_sommes_nous',compact('active_page'));
@@ -75,9 +75,9 @@ public function __construct()
 		];
 
 		Mail::send('mails.contact_us', $data, function($message) use ($data){
-                $message->to("assoc.cle.de.la.paix@gmail.com");
-                $message->subject('Formulaire de Contact :'.$data['objet']);
-            });
+			$message->to("assoc.cle.de.la.paix@gmail.com");
+			$message->subject('Formulaire de Contact :'.$data['objet']);
+		});
 
 		return redirect('/contact');
 	}

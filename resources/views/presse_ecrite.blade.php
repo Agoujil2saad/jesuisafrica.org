@@ -2,9 +2,14 @@
 @section('styles')
 @endsection
 @section('content')
+	<div class="row" id="present">
+		<div class="twelve wide column">
+			<img src="{{asset('images/logo.png')}}" class="ui medium centered image">
+		</div>
+	</div>
 <div class="row">
 	<div class="twelve wide column">
-		<table class="ui green table">
+		<table class="ui green table" style="margin-bottom: 2em;"> 
 			<thead>
 				<tr>
 					<th>Lien</th>
