@@ -41,19 +41,13 @@ ul li{
 
 					</div>
 				</div>
-				<div class="extra content">
-					<span class="left floated">
-						<i class="phone blue icon"></i>
-						+212666666666
-					</span>
-				</div>
 			</div>
 		</div>
 
 		<div class="eight wide column">
 			<form class="ui form segment centered form_animation" method="POST" action="{{ url('/contact_us') }}">
 				{{ csrf_field() }}
-				<h4 class="ui dividing blue header">Soyez libre de nous contacter</h4>
+				<h4 class="ui dividing blue header">Contactez-nous</h4>
 				<div class="field">
 					<label>Nom *</label>
 					<div class="ui left icon input">
@@ -83,10 +77,10 @@ ul li{
 					</div>
 				</div>
 				<div class="field">
-					<label>Comment pouvons-nous vous aider ?*</label>
+					<label>Description*</label>
 					<textarea rows="3" name="msg"></textarea>
 				</div>
-				<button class="ui blue button" type="submit">Submit</button>
+				<button class="ui blue button" type="submit">Envoyer</button>
 			</form>
 		</div>
 	</div>
