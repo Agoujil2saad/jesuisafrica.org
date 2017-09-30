@@ -18,6 +18,7 @@ Route::get('/qui_sommes_nous', 'StaticPagesController@qui_sommes_nous');
 Route::post('/contact_us', 'StaticPagesController@contact_us');
 Route::get('/espace_presse', 'StaticPagesController@espace_presse');
 Route::get('/tv_videos', 'StaticPagesController@tv_videos');
+Route::get('/presse_ecrite', 'StaticPagesController@presse_ecrite');
 //Join us Page 
 Route::get('/join_us', 'JoinController@create');
 Route::post('/join_us', 'JoinController@join_us');

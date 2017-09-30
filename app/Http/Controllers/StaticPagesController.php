@@ -81,4 +81,9 @@ public function __construct()
 
 		return redirect('/contact');
 	}
+
+	public function presse_ecrite()
+	{
+		return view('presse_ecrite');
+	}
 }

@@ -36,7 +36,7 @@ if (! isset($active_page)) {
       <a class="item" href="/photos"> @lang('lang.photo_l')</a>
       <a class="item" href="/#videos"> @lang('lang.video_l')</a>
       <a class="item" href="/tv_videos"> @lang('lang.tv_l')</a>
-      <a class="item" href="/archive_presse"> @lang('lang.presse_l')</a>
+      <a class="item" href="/presse_ecrite"> @lang('lang.presse_l')</a>
     </div>
   </div>
 </div>
@@ -144,7 +144,7 @@ if (! isset($active_page)) {
     <a class="item" href="/photos"> @lang('lang.photo_l')</a>
     <a class="item" href="/#videos"> @lang('lang.video_l')</a>
     <a class="item" href="/tv_videos"> @lang('lang.tv_l')</a>
-    <a class="item" href="/archive_presse"> @lang('lang.presse_l')</a>
+    <a class="item" href="/presse_ecrite"> @lang('lang.presse_l')</a>
   </div>
 </div>
 {{-- 4 --}}
