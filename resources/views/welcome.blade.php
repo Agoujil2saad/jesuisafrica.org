@@ -129,69 +129,34 @@ color: black;
         <i class="calendar blue icon"></i>
         @lang('lang.header_events')
     </div>
+    @if(Auth::check())
+        <a class="ui orange tiny button" href="/events/create">Créer Evenement</a>
+    @endif
     </CENTER>
 </div>
 <div class="row">
     <div class="ui doubling container four cards">
+        @foreach($events as $event)
         <div class="card">
             <div class=" ui fluid image">
                 <div class="ui blue ribbon label">
-                    <i class="time icon"></i> 13/09/2017
+                    <i class="time icon"></i> {{ $event->date }}
                 </div>
-                <img src="{{asset('images/events/event1.jpg')}}">
+                <img src="{{asset('images/events/'.$event->photo)}}">
             </div>
             <div class="content">
-                تنظم جمعية مفتاح السلام الدولية للتنمية والتضامن بشراكة مع المجلس الاستشاري للشباب الإفريقي و إدارة ملتقى الحوار والاستثمار الإفريقي،قافلة ثقافية ستجوب عدة دول افريقية تحمل اسم “السلم والسلام” و التي ستنظم بمناسبة احتفالات الشعب المغربي بعيد المسيرة الخضراء المظفرة
+                {{ $event->description }}
             </div>
             <div class="extra content">
-                <a  target="_blank" href="http://www.hibapress.com/details-122278.html">@lang('lang.learn_more')</a>
+                <a  target="_blank" href="{{ $event->lien }}">@lang('lang.learn_more')</a>
+                @if(!Auth::guest())
+                {!! Form::open(['method' => 'DELETE', 'route' => ['events.destroy', $event->id] ]) !!}
+                {!! Form::submit('Supprimer', ['class' => 'ui red button']) !!}
+                {!! Form::close() !!}
+                @endif
             </div>
         </div>
-        {{-- 2 --}}
-        <div class="card">
-            <div class=" ui fluid image">
-                <div class="ui blue ribbon label">
-                    <i class="time icon"></i> 04/09/2017
-                </div>
-                <img src="{{asset('images/events/event2.jpg')}}">
-            </div>
-            <div class="content">
-                حتفل اعضاء المجلس الاستشاري للشاب الافريقي التابع  لجمعية مفتاح السلام الدولية للتنمية والتضامن بالامس في مقر الجمعية بالرباط ،بعيد الاضحى في أجواء من الفرح والتعايش بين الديانات الثلاثة ،
-            </div>
-            <div class="extra content">
-                <a  target="_blank" href="http://www.hibapress.com/details-122278.html">@lang('lang.learn_more')</a>
-            </div>
-        </div>
-        {{-- 3 --}}
-        <div class="card">
-            <div class=" ui fluid image">
-                <div class="ui blue ribbon label">
-                    <i class="time icon"></i> 29/08/2017
-                </div>
-                <img src="{{asset('images/events/event3.jpg')}}">
-            </div>
-            <div class="content">
-                “مفتاح السلام” تنظم قافلة تضامنية بآيت حساين اوحدو بمناسبة ذكرى ثورة الملك والشعب
-            </div>
-            <div class="extra content">
-                <a  target="_blank" href="http://alakhbar24.net/3798-2/">@lang('lang.learn_more')</a>
-            </div>
-        </div>
-        {{-- 4 --}}
-        <div class="card">
-            <div class=" ui fluid image">
-                <div class="ui blue ribbon label">
-                    <i class="time icon"></i> 24/08/2017
-                </div>
-                <img src="{{asset('images/events/event4.jpg')}}">
-            </div>
-            <div class="content">
-                شركة ألمانية كبرى تدعم مشروع الأكاديمية الإفريقية لكرة القدم في مكناس
-            </div>
-            <div class="extra content">
-                <a  target="_blank" href="http://www.marocbuzz.com/ar/2017/08/24/%D8%B4%D8%B1%D9%83%D8%A9-%D8%A3%D9%84%D9%85%D8%A7%D9%86%D9%8A%D8%A9-%D9%83%D8%A8%D8%B1%D9%89-%D8%AA%D8%AF%D8%B9%D9%85-%D9%85%D8%B4%D8%B1%D9%88%D8%B9-%D8%A7%D9%84%D8%A3%D9%83%D8%A7%D8%AF%D9%8A%D9%85/">@lang('lang.learn_more')</a>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 <div class="row">
@@ -200,70 +165,34 @@ color: black;
         <i class="newspaper blue icon"></i>
         @lang('lang.our_news')
     </div>
+    @if(Auth::check())
+        <a class="ui orange tiny button" href="/news/create">Créer Actualité</a>
+    @endif
     </CENTER>
 </div>
 <div class="row">
-    <div class="ui container doubling  four cards">
+    <div class="ui container doubling four cards">
+        @foreach($news as $new)
         <div class="card">
-            <div class=" ui fluid image">
+            <div class="ui fluid image">
                 <div class="ui teal left ribbon label">
-                    <i class="time icon"></i>14/09/2017
+                    <i class="time icon"></i>{{ $new->date }}
                 </div>
-                <img src="{{asset('images/news/news1.jpg')}}">
+                <img src="{{asset('images/news/'.$new->photo)}}">
             </div>
             <div class="content">
-                تنظم  جمعية مفتاح السلام الدولية للتنمية والتضامن بشراكة مع المجلس الاستشاري للشباب الإفريقي و إدارة ملتقى الحوار والاستثمار الإفريقي،لقافلة ثقافة “السلم والسلام”، تفاعلا مع عودة المملكة المغربية إلى صف منظمة الاتحاد الإفريقي.
+                {{ $new->description }}
             </div>
             <div class="extra content">
-                <a  target="_blank" href="http://almaghribia24.com/%D9%82%D8%A7%D9%81%D9%84%D8%A9-%D8%A7%D9%84%D8%B3%D9%84%D9%85-%D9%88%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85-%D8%AA%D9%86%D8%B7%D9%84%D9%82-%D9%85%D9%86-%D9%85%D9%83%D9%86%D8%A7%D8%B3/">@lang('lang.learn_more')</a>
+                <a  target="_blank" href="{{ $new->lien }}">@lang('lang.learn_more')</a>
+                @if(!Auth::guest())
+                {!! Form::open(['method' => 'DELETE', 'route' => ['news.destroy', $new->id] ]) !!}
+                {!! Form::submit('Supprimer', ['class' => 'ui red button']) !!}
+                {!! Form::close() !!}
+                @endif
             </div>
         </div>
-        {{-- 2 --}}
-        <div class="card">
-            <div class=" ui fluid image">
-                <div class="ui teal left ribbon label">
-                    <i class="time icon"></i>14/09/2017
-                </div>
-                <img src="{{asset('images/news/news2.jpg')}}">
-            </div>
-            <div class="content">
-                تنظم جمعية مفتاح السلام الدولية للتنمية والتضامن بشراكة مع المجلس الاستشاري للشباب الإفريقي وإدارة ملتقى الحوار والاستثمار الإفريقي، قافلة ثقافية ستجوب عدة دول إفريقية تحمل اسم “السلم والسلام” والتي ستنظم بمناسبة احتفالات الشعب المغربي بعيد المسيرة الخضراء المظفرة.
-            </div>
-            <div class="extra content">
-                <a  target="_blank" href="https://al3omk.com/225723.html">@lang('lang.learn_more')</a>
-            </div>
-        </div>
-        {{-- 3 --}}
-        <div class="card">
-            <div class=" ui fluid image">
-                <div class="ui teal left ribbon label">
-                    <i class="time icon"></i>31/08/2017
-                </div>
-                <img src="{{asset('images/news/news3.jpg')}}">
-            </div>
-            <div class="content">
-                حل يوم 29 غشت 2017  وفدا  عن مكتب الدراسات الفرنسي المعتمد من الفيفا،بمطار محمد الخامس بالدار البيضاء  ،لتدارس مشروع بناء الاكاديمية الدولية “بانا افريقيا” لكرة القدم ،وكان في استقبالهم السيد خالد بودالي رئيس جمعية مفتاح السلام الدولية للتنمية والتضامن ،وإدارة ملتقى الحوار والاستثمار الافريقي ،وبعد التوجه الى مقر الجمعية بالرباط ،أعطيت مجموعة من الشروحات من طرف المكلفين بالمجلس الاستشاري للشباب الافريقي،حول اهداف الاكاديمية ،والمغزى من إنشائها فوق أرض مغربية
-            </div>
-            <div class="extra content">
-                <a  target="_blank" href="http://qalamnas.com/%D9%85%D9%83%D8%AA%D8%A8-%D8%A7%D9%84%D8%AF%D8%B1%D8%A7%D8%B3%D8%A7%D8%AA-%D8%A7%D9%84%D9%81%D8%B1%D9%86%D8%B3%D9%8A-%D9%8A%D8%AD%D9%84-%D8%A8%D9%85%D9%88%D9%82%D8%B9-%D8%A7%D9%84%D8%A7%D9%83%D8%A7/">@lang('lang.learn_more')</a>
-            </div>
-        </div>
-        {{-- 4 --}}
-        <div class="card">
-            <div class=" ui fluid image">
-                <div class="ui teal left ribbon label">
-                    <i class="time icon"></i> 30/08/2017
-                </div>
-                <img src="{{asset('images/news/news4.jpg')}}">
-            </div>
-            <div class="content">
-                رئيس ‘سيدياو’ الاقتصادية يعلن من الرباط أحقية المغرب لعضوية المجموعة
-                قال رئيس لجنة المجموعة الاقتصادية لدول غرب إفريقيا (سيدياو)، مارسيل آلان دي سوزا، اليوم الثلاثاء بالرباط، أن المغرب يحترم كل مبادئ قبول العضوية داخل المجموعة .
-            </div>
-            <div class="extra content">
-                <a  target="_blank" href="http://qalamnas.com/%D8%B1%D8%A6%D9%8A%D8%B3-%D8%B3%D9%8A%D8%AF%D9%8A%D8%A7%D9%88-%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF%D9%8A%D8%A9-%D9%8A%D8%B9%D9%84%D9%86-%D9%85%D9%86-%D8%A7%D9%84%D8%B1/">@lang('lang.learn_more')</a>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 <div class="row">

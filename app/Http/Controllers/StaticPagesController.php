@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Jobs\ChangeLocale;
 use Illuminate\Http\Request;
 use Mail;
+use App\News;
+use App\Events;
 
 class StaticPagesController extends Controller
 {
@@ -17,7 +19,9 @@ class StaticPagesController extends Controller
 	public function index()
 	{
 		$active_page='/';
-		return view('welcome',compact('active_page'));
+		$news = News::all();
+		$events = Events::all();
+		return view('welcome',compact('active_page', 'news', 'events'));
 	}
 	public function contact()
 	{

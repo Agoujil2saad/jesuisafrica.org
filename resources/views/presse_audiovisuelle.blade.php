@@ -10,7 +10,7 @@
 	<div class="row" id="present">
 		<div class="twelve wide column">
 			<img src="{{asset('images/logo.png')}}" class="ui medium centered image">
-			<h1 class="ui header">Audio Visuelle</h1>
+			<h1 class="ui header">Presse Audiovisuelle</h1>
 		</div>
 	</div>
 </div>
