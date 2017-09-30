@@ -76,7 +76,7 @@ if (! isset($active_page)) {
 </div>
 {{-- 7 --}}
 <div class="item">
-  <a class="ui blue tiny button">@lang('lang.enjoy_us')</a>
+  <a class="ui blue tiny button">@lang('lang.join_us')</a>
 </div>
 {{-- 8 --}}
 <div class="item">
@@ -181,7 +181,7 @@ if (! isset($active_page)) {
 
 {{-- 7 --}}
 <div class=" fitted item">
-  <a class="ui blue tiny button" href="/enjoy_us">@lang('lang.enjoy_us')</a>
+  <a class="ui blue tiny button" href="/join_us">@lang('lang.join_us')</a>
 </div>
 
 <div class="item">

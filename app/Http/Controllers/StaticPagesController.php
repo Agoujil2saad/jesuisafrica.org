@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Jobs\ChangeLocale;
 use Illuminate\Http\Request;
+use Mail;
 
 class StaticPagesController extends Controller
 {
@@ -55,6 +56,29 @@ public function __construct()
 		return redirect()->back();
 	}
 
+	public function contact_us(Request $request)
+	{
+		$this->validate($request, [
+			"nom"				=>'required',
+			"email"				=>'required',
+			"telephone"			=>'required',
+			"objet"				=>'required',
+			"msg"				=>'required',
+		]);
 
+		$data = [
+			'nom' 			=> request('nom'),
+			'email' 		=> request('email'),
+			'telephone' 	=> request('telephone'),
+			'objet' 		=> request('objet'),
+			'msg' 			=> request('msg'),
+		];
 
+		Mail::send('mails.contact_us', $data, function($message) use ($data){
+                $message->to("assoc.cle.de.la.paix@gmail.com");
+                $message->subject('Formulaire de Contact :'.$data['objet']);
+            });
+
+		return redirect('/contact');
+	}
 }

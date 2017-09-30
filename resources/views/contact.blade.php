@@ -51,7 +51,8 @@ ul li{
 		</div>
 
 		<div class="eight wide column">
-			<form class="ui form segment centered form_animation">
+			<form class="ui form segment centered form_animation" method="POST" action="{{ url('/contact_us') }}">
+				{{ csrf_field() }}
 				<h4 class="ui dividing blue header">Soyez libre de nous contacter</h4>
 				<div class="field">
 					<label>Nom *</label>
@@ -63,7 +64,7 @@ ul li{
 				<div class="field">
 					<label>Adresse e-mail *</label>
 					<div class="ui left icon input">
-						<input type="email" required placeholder="jesuisafrica@example.com">
+						<input type="email" name="email" placeholder="jesuisafrica@example.com" required>
 						<i class="mail outline icon blue"></i>
 					</div>
 				</div>
@@ -83,7 +84,7 @@ ul li{
 				</div>
 				<div class="field">
 					<label>Comment pouvons-nous vous aider ?*</label>
-					<textarea rows="3"></textarea>
+					<textarea rows="3" name="msg"></textarea>
 				</div>
 				<button class="ui blue button" type="submit">Submit</button>
 			</form>
