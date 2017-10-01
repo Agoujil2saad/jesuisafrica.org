@@ -22,7 +22,7 @@
 									</div>
 								</div>
 								<div class="field">
-									<label>Sectionner pays*</label>
+									<label>Sélectionner pays*</label>
 									<select class="ui search selection dropdown" name="pays" id="search-select" required>
 										<option value="">Pays</option>
 										<option value="Afghanistan">Afghanistan</option>

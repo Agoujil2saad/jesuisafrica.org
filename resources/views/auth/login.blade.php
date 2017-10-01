@@ -1,6 +1,6 @@
 @extends('layouts.master_1')
 @section('content')
-<div class="row" style="background-color:rgba(214, 212, 212,.2); padding:4em 0;">
+<div class="row" style="padding:4em 0;">
     <div class="six wide column">
         <center>
         <h1 class="ui header">

@@ -7,6 +7,10 @@ use Mail;
 
 class JoinController extends Controller
 {
+	  public function __construct()
+    {
+        $this->middleware('bugfree');
+    }
     public function create()
     {
     	return view('join_us');

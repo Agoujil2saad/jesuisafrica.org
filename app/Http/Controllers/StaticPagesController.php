@@ -14,6 +14,7 @@ class StaticPagesController extends Controller
 	protected $active_page;
 	public function __construct()
 	{
+		$this->middleware('bugfree');
 		$active_page='/';
 	}
 

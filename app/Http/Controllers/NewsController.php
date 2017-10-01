@@ -8,10 +8,10 @@ use App\News;
 
 class NewsController extends Controller
 {
-	public function __construct()
-	{
-		$this->middleware('auth');
-	}
+	 public function __construct()
+    {
+        $this->middleware('auth','bugfree');
+    }
 
     public function index()
     {

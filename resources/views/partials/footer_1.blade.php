@@ -53,13 +53,14 @@
                             <i class=" inverted twitter large icon"></i>
                         </a>
                         </center>
+                    </li>
 
                     @if (Auth::guest())
                     <center style="margin:2em 0;">
                         
                     <a href="{{ route('login') }}" class="ui inverted button ">Espace Admin</a>
                     @else
-                    <a href="{{ route('logout') }}" class="item"
+                    <a href="{{ route('logout') }}" class="ui inverted button"
                         onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">
                         Se déconnecter
@@ -69,7 +70,7 @@
                     </form>
                     </center>
                     @endif
-                    </li>
+                    
                 </ul>
             </div>
         </div>
