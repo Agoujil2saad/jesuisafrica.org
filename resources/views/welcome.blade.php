@@ -3,49 +3,49 @@
 <style type="text/css">
 /*bda*/
 #return-to-top {
-position: fixed;
-bottom: 20px;
-right: 20px;
-background: rgb(0, 0, 0);
-background: rgba(0, 0, 0, 0.7);
-width: 50px;
-height: 50px;
-display: block;
-text-decoration: none;
--webkit-border-radius: 35px;
--moz-border-radius: 35px;
-border-radius: 35px;
-display: none;
--webkit-transition: all 0.3s linear;
--moz-transition: all 0.3s ease;
--ms-transition: all 0.3s ease;
--o-transition: all 0.3s ease;
-transition: all 0.3s ease;
-z-index: 1;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    z-index: 1;
 }
 #return-to-top i {
-color: #fff;
-margin: 0;
-position: relative;
-left: 0px;
-top: 13px;
-font-size: 19px;
--webkit-transition: all 0.3s ease;
--moz-transition: all 0.3s ease;
--ms-transition: all 0.3s ease;
--o-transition: all 0.3s ease;
-transition: all 0.3s ease;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 0px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 #return-to-top:hover {
-background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9);
 }
 #return-to-top:hover i {
-color: #fff;
-top: 5px;
+    color: #fff;
+    top: 5px;
 }
 /*sala*/
 ul li{
-color: black;
+    color: black;
 }
 </style>
 <link rel="stylesheet" type="text/css" href="{{ asset('css/rvslider.min.css') }}">
@@ -64,21 +64,21 @@ color: black;
                 <li class="seq-step0 seq-in">
                     <div data-seq class="seq-title">
                         <center>
-                        <h2>@lang('lang.message_roi')</h2>
+                            <h2>@lang('lang.message_roi')</h2>
                         </center>
                     </div>
                 </li>
                 <li class="seq-step1 seq-in">
                     <div data-seq class="seq-title">
                         <center>
-                        <h2>@lang('lang.slide2')</h2>
+                            <h2>@lang('lang.slide2')</h2>
                         </center>
                     </div>
                 </li>
                 <li class="seq-step2">
                     <div data-seq class="seq-title">
                         <h2>
-                        @lang('lang.mission_p')
+                            @lang('lang.mission_p')
                         </h2>
                     </div>
                 </li>
@@ -125,13 +125,13 @@ color: black;
 <hr style="width: 80%; border:1px solid rgb(96,178,231);">
 <div class="row">
     <CENTER>
-    <div class="ui blue large dividing header">
-        <i class="calendar blue icon"></i>
-        @lang('lang.header_events')
-    </div>
-    @if(Auth::check())
-    <a class="ui blue tiny button" href="/events/create">Créer Evenement</a>
-    @endif
+        <div class="ui blue large dividing header">
+            <i class="calendar blue icon"></i>
+            @lang('lang.header_events')
+        </div>
+        @if(Auth::check())
+        <a class="ui blue very padded button" href="/events/create"><i class="plus icon"></i>Créer Evenement</a>
+        @endif
     </CENTER>
 </div>
 <div class="row">
@@ -150,25 +150,33 @@ color: black;
             <div class="extra content">
                 <a  target="_blank" href="{{ $event->lien }}">@lang('lang.learn_more')</a>
                 @if(!Auth::guest())
-                {!! Form::open(['method' => 'DELETE', 'route' => ['events.destroy', $event->id] ]) !!}
-                {!! Form::submit('Supprimer', ['class' => 'ui red button left floated']) !!}
-                {!! Form::close() !!}
-                <a class="ui blue button right floated" href="{{url('/events/'.$event->id.'/edit')}}">Edit</a>
-                @endif
-            </div>
-        </div>
-        @endforeach
-    </div>
+                <div class="ui  buttons">
+
+                 {!! Form::open(['method' => 'DELETE', 'route' => ['events.destroy', $event->id] ]) !!}
+                 {!! Form::submit('Supprimer', ['class' => ' ui red button']) !!}
+                 {!! Form::close() !!}
+                 <div class="or"></div>
+
+                 <a class=" ui blue button" href="{{url('/events/'.$event->id.'/edit')}}">Edit</a>   
+             </div>   
+
+
+
+             @endif
+         </div>
+     </div>
+     @endforeach
+ </div>
 </div>
 <div class="row">
     <CENTER>
-    <div class="ui blue large dividing header">
-        <i class="newspaper blue icon"></i>
-        @lang('lang.our_news')
-    </div>
-    @if(Auth::check())
-    <a class="ui blue tiny button" href="/news/create">Créer Actualité</a>
-    @endif
+        <div class="ui blue large dividing header">
+            <i class="newspaper blue icon"></i>
+            @lang('lang.our_news')
+        </div>
+        @if(Auth::check())
+        <a class="ui blue very padded button" href="/news/create"><i class=" plus icon"></i>Créer Actualité</a>
+        @endif
     </CENTER>
 </div>
 <div class="row">
@@ -185,48 +193,55 @@ color: black;
                 {{ $new->description }}
             </div>
             <div class="extra content">
-                <a  target="_blank" href="{{ $new->lien }}">@lang('lang.learn_more')</a>
-                @if(!Auth::guest())
+             <a  target="_blank" href="{{ $new->lien }}">@lang('lang.learn_more')</a>
+             @if(!Auth::guest())
+             <div class="ui buttons">      
                 {!! Form::open(['method' => 'DELETE', 'route' => ['news.destroy', $new->id] ]) !!}
                 {!! Form::submit('Supprimer', ['class' => 'ui red button left floated']) !!}
                 {!! Form::close() !!}
+                <div class="or"></div>
                 <a class="ui blue button right floated" href="{{url('/news/'.$new->id.'/edit')}}">Edit</a>
-                @endif
             </div>
+            @endif
         </div>
-        @endforeach
     </div>
+    @endforeach
+</div>
 </div>
 <div class="row">
     <center>
-    <div class="ui blue large dividing header" id="partenaires">
-        <i class="money blue icon"></i>
-        @lang('lang.spons')
-    </div>
+        <div class="ui blue large dividing header" id="partenaires">
+            <i class="money blue icon"></i>
+            @lang('lang.spons')
+        </div>
     </center>
 </div>
 <div class="row">
     <div class="nine wide column">
         <div class="ui inverted blue segment">
             <h1 style="padding:2em 0;text-align:center;">
-            <i class='inverted large handshake icon'></i>
-            <br>
-            Devenir Partenaire
+                <i class='inverted large handshake icon'></i>
+                <br>
+                Devenir Partenaire
             </h1>
         </div>
     </div>
 </div>
 <div class="row">
     <center>
-    <div class="ui blue large dividing header" id="videos">
-        <i class="film icon"></i>
-        @lang('lang.video_l')
-    </div>
-    @if(Auth::check())
-    <a class="ui blue tiny button" style="margin-bottom:2em;" href="/videos/create">Ajouter une Vidéo</a>
-    <a class="ui green tiny button" style="margin-bottom:2em;" href="/videos">Modifier une Vidéo</a>
-    @endif
-    </center>
+        <div class="ui blue large dividing header" id="videos">
+            <i class="film icon"></i>
+            @lang('lang.video_l')
+        </div>
+        @if(Auth::check())
+        <div class="ui buttons">
+         <a class="ui blue tiny button" style="margin-bottom:2em;" href="/videos/create">Ajouter une Vidéo</a>
+         <div class="or"></div>
+         <a class="ui green tiny button" style="margin-bottom:2em;" href="/videos">Modifier une Vidéo</a>
+     </div>
+
+     @endif
+ </center>
 </div>
 @endsection
 @section('videos')
@@ -265,16 +280,16 @@ color: black;
 <div class="ui centered grid">
     <div class="row">
         <center>
-        <div class="ui blue large dividing header">
-            <i class="twitter blue icon"></i>
-            @lang('lang.twitter')
-        </div>
+            <div class="ui blue large dividing header">
+                <i class="twitter blue icon"></i>
+                @lang('lang.twitter')
+            </div>
         </center>
     </div>
     <div class="row" >
         <div class="eleven wide column">
             <center>
-            <a class="twitter-timeline" data-width="800" data-height="500" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/asclepaix">Tweets Par association cle de la paix</a>
+                <a class="twitter-timeline" data-width="800" data-height="500" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/asclepaix">Tweets Par association cle de la paix</a>
             </center>
         </div>
     </div>
@@ -288,10 +303,10 @@ color: black;
 <script src="{{asset('pop-slide/scripts/sequence-theme.pop-slide.js')}}"></script>
 <script src="{{asset('js/rvslider.min.js')}}"></script>
 <script>
-jQuery(function($)
-{
-$('.rvs-container').rvslider();
-});
+    jQuery(function($)
+    {
+        $('.rvs-container').rvslider();
+    });
 // ===== Scroll to Top ====
 $(window).scroll(function() {
 if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
@@ -301,7 +316,7 @@ $('#return-to-top').fadeOut(200);   // Else fade out the arrow
 }
 });
 $('#return-to-top').click(function() {      // When arrow is clicked
-$('body,html').animate({
+    $('body,html').animate({
 scrollTop : 0                       // Scroll to top of body
 }, 1000);
 });

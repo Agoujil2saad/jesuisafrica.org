@@ -16,7 +16,7 @@ td,th{
 		</div>
 	</div>
 </div>
-<div class="row">
+<div class="row" style="padding-bottom: 3em;">
 	<table class="ui unstackable celled table">
 		<thead>
 			<tr class="center aligned">
@@ -31,7 +31,7 @@ td,th{
 				</td>
 				<td>
 					<h3>
-						<a href="{{asset('/pdfs/fiche_technique_fr.pdf')}}" target="_blank">Fiche Technique : Association Internationale Clé De la Paix</a>
+						<a href="{{asset('/pdfs/fiche_technique_fr.pdf')}}" target="_blank">Fiche Technique : Association Internationale Clé De la Paix</a>
 					</h3>
 				</td>
 			</tr>
@@ -41,7 +41,7 @@ td,th{
 				</td>
 				<td>
 					<h3>
-						<a href="{{asset('/pdfs/forum_association_thématique.pdf')}}" target="_blank">Thématique du forum : Association Internationale Clefs De la Paix</a>
+						<a href="{{asset('/pdfs/forum_association_thématique.pdf')}}" target="_blank">Thématique du forum : Association Internationale Clé De la Paix</a>
 					</h3>
 				</td>
 			</tr>
@@ -63,7 +63,7 @@ td,th{
 				</td>
 				<td>
 					<h3>
-						<a href="{{asset('/pdfs/dossier_du_caravane.pdf')}}" target="_blank">Dossier Du Caravane</a>
+						<a href="{{asset('/pdfs/dossier_du_caravane.pdf')}}" target="_blank">Dossier De La Caravane</a>
 					</h3>
 				</td>
 			</tr>
@@ -114,7 +114,7 @@ td,th{
 				</td>
 				<td>
 					<h3>
-						<a href="{{asset('/logos/logo.png')}}" target="_blank">Logo d'Association Internationale Clefs De la Paix</a>
+						<a href="{{asset('/logos/logo.png')}}" target="_blank">Logo de l'Association Internationale Clé De la Paix</a>
 					</h3>
 				</td>
 			</tr>

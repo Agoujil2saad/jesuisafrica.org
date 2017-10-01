@@ -56,7 +56,7 @@ if (! isset($active_page)) {
   <div class="menu">
     <div class="item">Caravane culturelle et de l'intégration africaine</div>
     <div class="item"> Forum du dialogue et de l'investissement</div>
-    <div class="item"> Académique Panafricaine de Football</div>
+    <div class="item">  Académie Panafricaine de Football </div>
     <div class="item"> Radio-Tv ( voice of Africa )</div>
     <div class="item"> Institut des Relations Economiques Maroco-Africaines</div>
   </div>

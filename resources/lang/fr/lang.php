@@ -32,7 +32,7 @@ return [
   'header_us' =>'Qui Sommes-nous?',
   'header_projets' => 'Nos Projets',
   'header_partners' => 'Nos Partenaires',
-  'header_events' => 'Nos Éventements',
+  'header_events' => 'Nos Événements',
   'header_connect' => 'Se connecter',
   'header_admin' => 'Admin',
   'header_logout' => 'Se déconnecter',
@@ -102,7 +102,7 @@ return [
    'photo_l' => 'Photothèque',
   'prog' => 'Programme',
   'mission_p' => '- Prendre part au dialogue et à la cohabitation entre cultures.<br>
-- Promouvoir l’investissement matériel et immatériel.<br>
+- Promouvoir l’investissement matériel et immatériel.<br>
 - Lancer un débat sur les politiques publiques.<br>
 - Créer une société moderne et développée à travers l’intégration des jeunes.',
 'presentation' => '<h1 class="ui  blue centered header">L’association œuvre à réaliser les objectifs suivants :</h1>
@@ -118,7 +118,7 @@ Rehausser le niveau de prise de conscience chez les jeunes et les inciter à as
 </li><ul>',
  
 'twitter' => 'Twitter',
-'message_roi' => 'Discours de S.M :"Nous sommes également conscients de notre volonté de créer des partenariats productifs avec eux, en fonction d\'investissements coordonnés et de programmes de développement entre les secteurs public et privé dans les pays concernés. Ceux qui connaissent la vérité et favorisent les exagérations, que le Maroc dépensent de l\'argent sur l\'Afrique, au lieu de dépenser sur les Marocains, ils ne veulent pas l\'intérêt du pays"',
+'message_roi' => 'Discours de S.M le Roi Mohammed VI : <br> «Nous sommes également conscients de notre volonté de créer des partenariats productifs avec eux, en fonction d\'investissements coordonnés et de programmes de développement entre les secteurs public et privé dans les pays concernés. Ceux qui connaissent la vérité et favorisent les exagérations, que le Maroc dépensent de l\'argent sur l\'Afrique, au lieu de dépenser sur les Marocains, ils ne veulent pas l\'intérêt du pays»',
 'slide2' => 'Le 1er Forum du Dialogue et de l’Investissement Africain <br>
     Sur le thème <br>
     « L’Afrique, coexistence et civilisation ».<br>
@@ -134,8 +134,8 @@ Rehausser le niveau de prise de conscience chez les jeunes et les inciter à as
 'media_l' => 'Médiathèque',
 'tv_l' => 'TV',
 'presse_l' => 'Presse Électronique',
-'join_us' => 'Rejoignez-Nous',
-'envoyer_demande' => 'Envoyer Ma Demande',
+'join_us' => 'Nous rejoindre',
+'envoyer_demande' => 'Envoyer ma demande',
 
 
 

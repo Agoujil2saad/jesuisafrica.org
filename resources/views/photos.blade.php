@@ -2,7 +2,8 @@
 @section('styles')
 <link rel="stylesheet" type="text/css" href="/lightgallery/dist/css/lightgallery.min.css">
 <style type="text/css">
-	.clearfix::after {
+	.clearfix::after 
+	{
     	content: "";
     	clear: both;
     	display: block;
@@ -198,7 +199,7 @@
 				</a>
 				<a class="item" href="/photos#galery2">
 					<i class="camera retro icon blue"></i>
-					 Visite du président du association clé de la paix au plusieurs consulat africaine 
+					 Visite du président du association clé de la paix aux plusieurs consulats africains 
 				</a>
 				<a class="item" href="/photos#galery3">
 					<i class="camera retro icon blue"></i>

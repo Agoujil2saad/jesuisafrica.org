@@ -29,18 +29,6 @@
                     <a href="/qui_sommes_nous" class="item">@lang('lang.header_us')</a>
                     <a href="/contact" class="item">@lang('lang.footer_contact')</a>
                     {{--     <a href="/team" class="item">@lang('lang.footer_team')</a> --}}
-                    @if (Auth::guest())
-                    <a href="{{ route('login') }}" class="item">Espace Admin</a>
-                    @else
-                    <a href="{{ route('logout') }}" class="item"
-                        onclick="event.preventDefault();
-                        document.getElementById('logout-form').submit();">
-                        Se déconnecter
-                    </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        {{ csrf_field() }}
-                    </form>
-                    @endif
                 </div>
             </div>
             <div class="six wide column">
@@ -65,6 +53,22 @@
                             <i class=" inverted twitter large icon"></i>
                         </a>
                         </center>
+
+                    @if (Auth::guest())
+                    <center style="margin:2em 0;">
+                        
+                    <a href="{{ route('login') }}" class="ui inverted button ">Espace Admin</a>
+                    @else
+                    <a href="{{ route('logout') }}" class="item"
+                        onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                        Se déconnecter
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        {{ csrf_field() }}
+                    </form>
+                    </center>
+                    @endif
                     </li>
                 </ul>
             </div>

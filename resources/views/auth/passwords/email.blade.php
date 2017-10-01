@@ -1,11 +1,13 @@
-@extends('layouts.app')
+@extends('layouts.master_1')
 
 @section('content')
-<div class="container">
-    <div class="row">
-        <div class="col-md-8 col-md-offset-2">
-            <div class="panel panel-default">
-                <div class="panel-heading">Reset Password</div>
+    <div class="row" style="padding-bottom: 3em">
+        <div class="four wide column">
+            <img src="{{asset('images/logo.png')}}" class="ui medium image">
+        </div>
+        <div class="eight wide column">
+            <div class="ui very padded green segment">
+                <div class="ui small header ">Reset Password</div>
 
                 <div class="panel-body">
                     @if (session('status'))
@@ -14,13 +16,12 @@
                         </div>
                     @endif
 
-                    <form class="form-horizontal" method="POST" action="{{ route('password.email') }}">
+                    <form class="ui fluid form" method="POST" action="{{ route('password.email') }}">
                         {{ csrf_field() }}
 
-                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
+                        <div class=" field {{ $errors->has('email') ? 'error' : '' }}">
+                            <label for="email" class="label">E-Mail Address</label>
 
-                            <div class="col-md-6">
                                 <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required>
 
                                 @if ($errors->has('email'))
@@ -28,12 +29,12 @@
                                         <strong>{{ $errors->first('email') }}</strong>
                                     </span>
                                 @endif
-                            </div>
+
                         </div>
 
-                        <div class="form-group">
+                        <div class="field">
                             <div class="col-md-6 col-md-offset-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="ui blue button">
                                     Send Password Reset Link
                                 </button>
                             </div>
@@ -43,5 +44,4 @@
             </div>
         </div>
     </div>
-</div>
 @endsection

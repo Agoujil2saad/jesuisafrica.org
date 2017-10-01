@@ -47,7 +47,7 @@ ul li{
 		<div class="eight wide column">
 			<form class="ui form segment centered form_animation" method="POST" action="{{ url('/contact_us') }}">
 				{{ csrf_field() }}
-				<h4 class="ui dividing blue header">Contactez-nous</h4>
+				<h4 class="ui dividing blue header">Contact</h4>
 				<div class="field">
 					<label>Nom *</label>
 					<div class="ui left icon input">

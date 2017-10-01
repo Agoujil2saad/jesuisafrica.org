@@ -133,7 +133,7 @@
 		</a>
 	</div>
 </div>
-<div class="row">
+<div class="row" style="padding-bottom: 3em;">
 	<div class="five wide column">
 		<a data-fancybox="gallery" href="https://youtu.be/yR6fiooNFzo">
 			<img class="ui image" src="https://img.youtube.com/vi/yR6fiooNFzo/sddefault.jpg">

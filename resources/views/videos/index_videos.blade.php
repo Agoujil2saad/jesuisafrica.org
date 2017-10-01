@@ -2,7 +2,7 @@
 @section('styles')
 @endsection
 @section('content')
-<div class="row">
+<div class="row" style="padding-bottom: 3em;">
 	<div class="eleven wide column">
 		@if (session('status'))
 		<div class="ui yellow message transition">
@@ -29,10 +29,14 @@
 					</td>
 					<td>{{ $video->titre }}</td>
 					<td class="right aligned collapsing">
+						<div class="ui buttons">
+							
 						{!! Form::open(['method' => 'DELETE', 'route' => ['videos.destroy', $video->id] ]) !!}
 						{!! Form::submit('Supprimer', ['class' => 'ui red button']) !!}
 						{!! Form::close() !!}
+						<div class="or"></div>
 						<a class="ui blue button" href="{{url('/videos/'.$video->id.'/edit')}}">Edit</a>
+						</div>
 					</td>
 				</tr>
 				@endforeach

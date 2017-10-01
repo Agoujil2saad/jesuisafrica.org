@@ -27,7 +27,7 @@
             
             
             <div class="field">
-                <button type="submit" class="ui orange button">
+                <button type="submit" class="ui blue button">
                 @lang('lang.header_connect')
                 </button>
                 <a class="ui label" href="{{ route('password.request') }}">
