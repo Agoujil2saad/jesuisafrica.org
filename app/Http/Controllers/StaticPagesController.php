@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Mail;
 use App\News;
 use App\Events;
-use App\YoutubeVideos;
+use App\Youtubevideos;
 
 class StaticPagesController extends Controller
 {
@@ -22,7 +22,7 @@ class StaticPagesController extends Controller
 		$active_page='/';
 		$news = News::all();
 		$events = Events::all();
-		$videos = YoutubeVideos::all();
+		$videos = Youtubevideos::all();
 		return view('welcome',compact('active_page', 'news', 'events', 'videos'));
 	}
 	public function contact()
