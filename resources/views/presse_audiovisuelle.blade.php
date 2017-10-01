@@ -147,6 +147,5 @@
 </div>
 @endsection
 @section('scripts')
-<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
 @endsection
