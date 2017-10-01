@@ -130,7 +130,7 @@ color: black;
         @lang('lang.header_events')
     </div>
     @if(Auth::check())
-        <a class="ui orange tiny button" href="/events/create">Créer Evenement</a>
+    <a class="ui blue tiny button" href="/events/create">Créer Evenement</a>
     @endif
     </CENTER>
 </div>
@@ -151,8 +151,9 @@ color: black;
                 <a  target="_blank" href="{{ $event->lien }}">@lang('lang.learn_more')</a>
                 @if(!Auth::guest())
                 {!! Form::open(['method' => 'DELETE', 'route' => ['events.destroy', $event->id] ]) !!}
-                {!! Form::submit('Supprimer', ['class' => 'ui red button']) !!}
+                {!! Form::submit('Supprimer', ['class' => 'ui red button left floated']) !!}
                 {!! Form::close() !!}
+                <a class="ui blue button right floated" href="{{url('/events/'.$event->id.'/edit')}}">Edit</a>
                 @endif
             </div>
         </div>
@@ -166,7 +167,7 @@ color: black;
         @lang('lang.our_news')
     </div>
     @if(Auth::check())
-        <a class="ui orange tiny button" href="/news/create">Créer Actualité</a>
+    <a class="ui blue tiny button" href="/news/create">Créer Actualité</a>
     @endif
     </CENTER>
 </div>
@@ -187,8 +188,9 @@ color: black;
                 <a  target="_blank" href="{{ $new->lien }}">@lang('lang.learn_more')</a>
                 @if(!Auth::guest())
                 {!! Form::open(['method' => 'DELETE', 'route' => ['news.destroy', $new->id] ]) !!}
-                {!! Form::submit('Supprimer', ['class' => 'ui red button']) !!}
+                {!! Form::submit('Supprimer', ['class' => 'ui red button left floated']) !!}
                 {!! Form::close() !!}
+                <a class="ui blue button right floated" href="{{url('/news/'.$new->id.'/edit')}}">Edit</a>
                 @endif
             </div>
         </div>
@@ -227,331 +229,31 @@ color: black;
 <div class="rvs-container rvs-horizontal rvs-light rvs-green-highlight rvs-large-thumbs" style="max-width: 100%">
     <div class="rvs-item-container" >
         <div class="rvs-item-stage">
-            <!-- The below is a single item, simply duplicate this layout for each item -->
-            <div class="rvs-item" style="background-image: url(https://img.youtube.com/vi/tVHHexpCoCQ/maxresdefault.jpg)">
+            <!-- Items -->
+            @foreach($videos as $video)
+            <div class="rvs-item" style="background-image: url(https://img.youtube.com/vi/{{$video->value}}/hqdefault.jpg)">
                 <p class="rvs-item-text" style="color: white;">
-                    المغرب: دور المجتمع المدني في الوحدة الإفريقية
+                    {{ $video->titre }}
                 </p>
-                <a href="https://www.youtube.com/watch?v=tVHHexpCoCQ" class="rvs-play-video"></a>
+                <a href="https://www.youtube.com/watch?v={{$video->value}}" class="rvs-play-video"></a>
             </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(https://img.youtube.com/vi/YradtwO7I6Y/maxresdefault.jpg)">
-                <p class="rvs-item-text" style="color: white;">
-                    Caravane de la paix du dialogue interculturel et de l'integration
-                </p>
-                <a href="https://www.youtube.com/watch?v=YradtwO7I6Y" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(https://img.youtube.com/vi/QGf5d4WYXKI/maxresdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    بمناسبة ذكرى ثورة الملك والشعب “مفتاح السلام” تنظم قافلة تضامنية بآيت حساين اوحدو
-                </p>
-                <a href="https://www.youtube.com/watch?v=QGf5d4WYXKI" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/bL0JtL0hs8A/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: white;">
-                    مفتاح السلام تتضامن مع ساكنة أيت حساين احدو بإقليم بولمان
-                </p>
-                <a href="https://www.youtube.com/watch?v=bL0JtL0hs8A" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/2zhuDY6xRVc/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    جمعية مفتاح السلام تتضامن مع ساكنة أيت حساين احدو بإقليم بولمان
-                </p>
-                <a href="https://www.youtube.com/watch?v=2zhuDY6xRVc" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/tTTH0DeDhAE/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    إحداث أكاديمية إفريقية لكرة القدم بالمغرب
-                </p>
-                <a href="https://www.youtube.com/watch?v=tTTH0DeDhAE" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/9eNOzZf_5fk/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    نجوم عالميون في افتتاح أكاديمية لكرة القدم بمكناس
-                </p>
-                <a href="https://www.youtube.com/watch?v=9eNOzZf_5fk" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/rzigGBKCHdc/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    تعرف على تفاصيل إطلاق الأكاديمية "بانا إفريقية" لكرة القدم
-                </p>
-                <a href="https://www.youtube.com/watch?v=rzigGBKCHdc" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/wEhDevHOtsI/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    هذا ما قاله "روجي ميلا" عن قدرة المغرب على تنظيم "كأس العالم"
-                </p>
-                <a href="https://www.youtube.com/watch?v=wEhDevHOtsI" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/s7vEjRV7hoE/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: white;">
-                    روجي ميلا لـ"الأيام24": بكيت بعد وفاة الظلمي
-                </p>
-                <a href="https://www.youtube.com/watch?v=s7vEjRV7hoE" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/IPwXHhO4vlY/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    académie africaine sportive
-                </p>
-                <a href="https://www.youtube.com/watch?v=IPwXHhO4vlY" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/PDbWoQqdxZ4/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    قناة الامازيغية واكبت اليوم الدراسي لمفتاح السلام الدولية لاعداد قافلة السلم والسلام نحو أديس أبابا
-                </p>
-                <a href="https://www.youtube.com/watch?v=PDbWoQqdxZ4" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/DdrsQML1408/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    انطلاق قافلة تضامنية من مكناس إلى أديس أبابا مرورا ب 15 دولة افريقية
-                </p>
-                <a href="https://www.youtube.com/watch?v=DdrsQML1408" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/pq8gmUloOyY/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    جمعية مفتاح السلام الدولية للتنمية والتضامن تنظم قافلة افريقيا
-                </p>
-                <a href="https://www.youtube.com/watch?v=pq8gmUloOyY" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/68HizFLqV5s/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    جمعية مفتاح السلام الدولية بتنسيق مع جمعية انوار وحمعية أصيكما نظمت افطارا جماعيا للافارقة
-                </p>
-                <a href="https://www.youtube.com/watch?v=68HizFLqV5s" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/RnN_3bsatMs/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    المغرب يربط جسور التواصل مع إفريقيا
-                </p>
-                <a href="https://www.youtube.com/watch?v=RnN_3bsatMs" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/aHyMbCezcBY/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    الجمع العام التأسيسي للمجلس الاستشاري للشباب الإفريقي
-                </p>
-                <a href="https://www.youtube.com/watch?v=aHyMbCezcBY" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/2rCXt5IcDTA/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    جمعية مفتاح السلام والملتقى الأول للحوار والإستثمارالإفريقي بالرباط
-                </p>
-                <a href="https://www.youtube.com/watch?v=2rCXt5IcDTA" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/w4ldjJ6ZYig/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    الجمع العام التأسيسي للمجلس الاستشاري للشباب الإفريقي
-                </p>
-                <a href="https://www.youtube.com/watch?v=w4ldjJ6ZYig" class="rvs-play-video"></a>
-            </div>
-            <!-- new item -->
-            <div class="rvs-item" style="background-image: url(http://img.youtube.com/vi/-J0C_zkd0c8/hqdefault.jpg)">
-                <p class="rvs-item-text" style="color: black;">
-                    فيديو يعرض تأسيس مجلس استشاري للأفارقة بالرباط
-                </p>
-                <a href="https://www.youtube.com/watch?v=-J0C_zkd0c8" class="rvs-play-video"></a>
-            </div>
+            @endforeach
         </div>
     </div>
     <div class="rvs-nav-container">
         <a class="rvs-nav-prev"></a>
         <div class="rvs-nav-stage">
-            <!-- The below is the corresponding nav item for the single item, simply duplicate this layout for each item -->
+            <!-- items -->
+            @foreach($videos as $video)
             <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/tVHHexpCoCQ/maxresdefault.jpg) "></span>
+                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/{{$video->value}}/hqdefault.jpg)"></span>
                 <h4 class="rvs-nav-item-title">
-                المغرب: دور المجتمع المدني في الوحدة الإفريقية
+                    {{ $video->titre }}
                 </h4>
                 <small class="rvs-nav-item-credits">
                 </small>
             </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/YradtwO7I6Y/maxresdefault.jpg) "></span>
-                <h4 class="rvs-nav-item-title">
-                Caravane de la paix du dialogue interculturel et de l'integration
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/QGf5d4WYXKI/maxresdefault.jpg) "></span>
-                <h4 class="rvs-nav-item-title">
-                بمناسبة ذكرى ثورة الملك والشعب “مفتاح السلام” تنظم قافلة تضامنية بآيت حساين اوحدو
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/bL0JtL0hs8A/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                مفتاح السلام تتضامن مع ساكنة أيت حساين احدو بإقليم بولمان
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/2zhuDY6xRVc/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                جمعية مفتاح السلام تتضامن مع ساكنة أيت حساين احدو بإقليم بولمان
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/tTTH0DeDhAE/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                جمعية مفتاح السلام تتضامن مع ساكنة أيت حساين احدو بإقليم بولمان
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/9eNOzZf_5fk/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                نجوم عالميون في افتتاح أكاديمية لكرة القدم بمكناس
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/rzigGBKCHdc/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                تعرف على تفاصيل إطلاق الأكاديمية "بانا إفريقية" لكرة القدم
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/wEhDevHOtsI/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                هذا ما قاله "روجي ميلا" عن قدرة المغرب على تنظيم "كأس العالم"
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/s7vEjRV7hoE/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                روجي ميلا لـ"الأيام24": بكيت بعد وفاة الظلمي
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/IPwXHhO4vlY/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                académie africaine sportive
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/PDbWoQqdxZ4/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                قناة الامازيغية واكبت اليوم الدراسي لمفتاح السلام الدولية لاعداد قافلة السلم والسلام نحو أديس أبابا
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/DdrsQML1408/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                انطلاق قافلة تضامنية من مكناس إلى أديس أبابا مرورا ب 15 دولة افريقية
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/pq8gmUloOyY/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                جمعية مفتاح السلام الدولية للتنمية والتضامن تنظم قافلة افريقيا
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/68HizFLqV5s/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                جمعية مفتاح السلام الدولية بتنسيق مع جمعية انوار وحمعية أصيكما نظمت افطارا جماعيا للافارقة
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/RnN_3bsatMs/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                المغرب يربط جسور التواصل مع إفريقيا
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/aHyMbCezcBY/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                الجمع العام التأسيسي للمجلس الاستشاري للشباب الإفريقي
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/2rCXt5IcDTA/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                جمعية مفتاح السلام والملتقى الأول للحوار والإستثمارالإفريقي بالرباط
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/w4ldjJ6ZYig/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                الجمع العام التأسيسي للمجلس الاستشاري للشباب الإفريقي
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
-            <!-- new item -->
-            <a class="rvs-nav-item">
-                <span class="rvs-nav-item-thumb" style="background-image: url(https://img.youtube.com/vi/-J0C_zkd0c8/2.jpg)"></span>
-                <h4 class="rvs-nav-item-title">
-                فيديو يعرض تأسيس مجلس استشاري للأفارقة بالرباط
-                </h4>
-                <small class="rvs-nav-item-credits">
-                </small>
-            </a>
+            @endforeach
         </div>
         <a class="rvs-nav-next"></a>
     </div>

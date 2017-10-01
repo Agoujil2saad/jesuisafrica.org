@@ -14,7 +14,48 @@ class EventsController extends Controller
 
     public function create()
     {
-    	return view('create_events');
+        return view('create_events');
+    }
+
+    public function edit($id)
+    {
+        $event = Events::findOrFail($id);
+        return view('edit_events' , compact('event'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $this->validate($request, [
+            'photo' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            "lien"              =>'required',
+            "date"              =>'required',
+            "description"       =>'required',
+        ]);
+
+        $event = Events::findOrFail($id);
+
+        if($request->hasFile('photo'))
+        {
+            $photo = $request->file('photo');
+            $destinationPath = public_path('/images/events');
+            $name = $photo->getClientOriginalName();
+            $photo->move($destinationPath, $name);
+
+            $event->photo = $name;
+            $event->lien = request('lien');
+            $event->date = request('date');
+            $event->description = request('description');
+            $event->save();
+
+            return redirect()->route('events.edit',$id)->with('status', 'L\'evenement est modifié');
+        }
+
+        $event->lien = request('lien');
+        $event->date = request('date');
+        $event->description = request('description');
+        $event->save();
+
+        return redirect()->route('events.edit',$id)->with('status', 'L\'evenement est modifié');
     }
 
     public function store(Request $request)

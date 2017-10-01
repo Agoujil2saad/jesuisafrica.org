@@ -18,6 +18,47 @@ class NewsController extends Controller
     	return view('create_news');
     }
 
+    public function edit($id)
+    {
+        $new = News::findOrFail($id);
+        return view('edit_news' , compact('new'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $this->validate($request, [
+            'photo' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            "lien"              =>'required',
+            "date"              =>'required',
+            "description"       =>'required',
+        ]);
+
+        $new = News::findOrFail($id);
+
+        if($request->hasFile('photo'))
+        {
+            $photo = $request->file('photo');
+            $destinationPath = public_path('/images/news');
+            $name = $photo->getClientOriginalName();
+            $photo->move($destinationPath, $name);
+
+            $new->photo = $name;
+            $new->lien = request('lien');
+            $new->date = request('date');
+            $new->description = request('description');
+            $new->save();
+
+            return redirect()->route('news.edit',$id)->with('status', 'L\'actualité est modifié');
+        }
+
+        $new->lien = request('lien');
+        $new->date = request('date');
+        $new->description = request('description');
+        $new->save();
+
+        return redirect()->route('news.edit',$id)->with('status', 'L\'actualité est modifié');
+    }
+
     public function store(Request $request)
     {
     	$this->validate($request, [
