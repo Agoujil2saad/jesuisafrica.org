@@ -18,4 +18,5 @@ Auth::routes();
 // Espace Admin
 Route::resource('news', 'NewsController');
 Route::resource('events', 'EventsController');
+Route::resource('videos', 'YoutubevideosController');
 

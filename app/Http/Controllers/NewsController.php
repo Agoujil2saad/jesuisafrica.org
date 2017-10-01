@@ -13,15 +13,21 @@ class NewsController extends Controller
 		$this->middleware('auth');
 	}
 
+    public function index()
+    {
+        $news = News::all();
+        return view('news.index_news', compact('news'));
+    }
+
     public function create()
     {
-    	return view('create_news');
+    	return view('news.create_news');
     }
 
     public function edit($id)
     {
         $new = News::findOrFail($id);
-        return view('edit_news' , compact('new'));
+        return view('news.edit_news' , compact('new'));
     }
 
     public function update(Request $request, $id)
@@ -48,7 +54,7 @@ class NewsController extends Controller
             $new->description = request('description');
             $new->save();
 
-            return redirect()->route('news.edit',$id)->with('status', 'L\'actualité est modifié');
+            return redirect()->route('news.index')->with('status', 'L\'actualité est modifié');
         }
 
         $new->lien = request('lien');
@@ -56,7 +62,7 @@ class NewsController extends Controller
         $new->description = request('description');
         $new->save();
 
-        return redirect()->route('news.edit',$id)->with('status', 'L\'actualité est modifié');
+        return redirect()->route('news.index')->with('status', 'L\'actualité est modifié');
     }
 
     public function store(Request $request)
@@ -81,16 +87,17 @@ class NewsController extends Controller
     		'date' 			=> request('date'),
     		'description' 	=> request('description'),
     		]);
-			return redirect()->route('news.create')->with('status', 'L\'actualité est créée !!');
+			return redirect()->route('news.index')->with('status', 'L\'actualité est créée.');
         }
 
-		return redirect()->route('news.create')->with('status', 'L\'actualité n\'est pas créée !!');
+		return redirect()->route('news.index')->with('status', 'L\'actualité n\'est pas créée.');
     }
 
     public function destroy($id)
     {
     	$news = News::findOrFail($id);
     	$news->delete();
-    	return redirect('/');
+    	
+        return redirect()->route('news.index')->with('status', 'L\'actualité est supprimée.');
     }
 }

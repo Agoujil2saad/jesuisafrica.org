@@ -12,7 +12,7 @@
 			</div>
 		</div>
 		@endif
-		{{ Form::open(array('route' => 'news.store','files' => true, 'class' => 'ui form segment centered form_animation')) }}
+		{{ Form::open(array('route' => 'news.store','files' => true, 'class' => 'ui form segment centered form_animation', 'style' => "margin-bottom:1.5em;")) }}
 		<h4 class="ui dividing blue header">Création d'une actualité</h4>
 		<div class="field">
 			<label>Photo*</label>

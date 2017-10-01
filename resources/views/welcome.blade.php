@@ -222,6 +222,10 @@ color: black;
         <i class="film icon"></i>
         @lang('lang.video_l')
     </div>
+    @if(Auth::check())
+    <a class="ui blue tiny button" style="margin-bottom:2em;" href="/videos/create">Ajouter une Vidéo</a>
+    <a class="ui green tiny button" style="margin-bottom:2em;" href="/videos">Modifier une Vidéo</a>
+    @endif
     </center>
 </div>
 @endsection

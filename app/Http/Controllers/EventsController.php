@@ -12,15 +12,21 @@ class EventsController extends Controller
 		$this->middleware('auth');
 	}
 
+    public function index()
+    {
+        $events = Events::all();
+        return view('events.index_events', compact('events'));
+    }
+
     public function create()
     {
-        return view('create_events');
+        return view('events.create_events');
     }
 
     public function edit($id)
     {
         $event = Events::findOrFail($id);
-        return view('edit_events' , compact('event'));
+        return view('events.edit_events' , compact('event'));
     }
 
     public function update(Request $request, $id)
@@ -47,7 +53,7 @@ class EventsController extends Controller
             $event->description = request('description');
             $event->save();
 
-            return redirect()->route('events.edit',$id)->with('status', 'L\'evenement est modifié');
+            return redirect()->route('events.index')->with('status', 'L\'evenement est modifié');
         }
 
         $event->lien = request('lien');
@@ -55,7 +61,7 @@ class EventsController extends Controller
         $event->description = request('description');
         $event->save();
 
-        return redirect()->route('events.edit',$id)->with('status', 'L\'evenement est modifié');
+        return redirect()->route('events.index')->with('status', 'L\'evenement est modifié');
     }
 
     public function store(Request $request)
@@ -80,16 +86,17 @@ class EventsController extends Controller
     		'date' 			=> request('date'),
     		'description' 	=> request('description'),
     		]);
-    		return redirect()->route('events.create')->with('status', 'L\'evenement est créé');
+    		return redirect()->route('events.index')->with('status', 'L\'evenement est créé');
         }
 
-		return redirect()->route('events.create')->with('status', 'L\'evenement n\'est pas créé !!');
+		return redirect()->route('events.index')->with('status', 'L\'evenement n\'est pas créé !!');
     }
 
     public function destroy($id)
     {
     	$events = Events::findOrFail($id);
     	$events->delete();
-    	return redirect('/');
+    	
+        return redirect()->route('events.index')->with('status', 'L\'evenement est supprimé.');
     }
 }
