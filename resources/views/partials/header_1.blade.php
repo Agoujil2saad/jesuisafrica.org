@@ -10,7 +10,7 @@ if (! isset($active_page)) {
     <a href="/">
       <img src="{{asset("images/logo.png")}}" alt="logo" class="ui left tiny centered image" id="logo_left">
     </a>
-    <div class="ui sidebar blue vertical menu" id="sidebar_navigation">
+    <div class="ui sidebar  blue vertical menu" id="sidebar_navigation">
      
      <a class="{{$active_page == "/"?'active':''}} item" href="/">
       <p class="ui blue small header">
@@ -48,29 +48,30 @@ if (! isset($active_page)) {
 </a>
 {{-- 5 --}}
 <div class="item">
- <div class="ui dropdown ">
+ <div class="ui compact dropdown ">
   <span class="text">
     <span class="ui blue  tiny header">@lang('lang.header_projets')</span>
   </span>
   <i class="dropdown icon"></i>
   <div class="menu">
-    <div class="item">Caravane culturelle et de l'intégration africaine</div>
-    <div class="item"> Forum du dialogue et de l'investissement</div>
-    <div class="item">  Académie Panafricaine de Football </div>
-    <div class="item"> Radio-Tv ( voice of Africa )</div>
-    <div class="item"> Institut des Relations Economiques Maroco-Africaines</div>
+    <div class="item">Caravane culturelle  <br>et 
+    de l'intégration africaine</div>
+    <div class="item"> Forum du dialogue <br>et de l'investissement</div>
+    <div class="item">  Académie Panafricaine  <br>de Football </div>
+    <div class="item"> Radio-Tv <br>( voice of Africa )</div>
+    <div class="item"> Institut des Relations <br>  Economiques Maroco-Africaines</div>
   </div>
 </div>
 </div>
 {{-- 6 --}}
 <div class="item">
-  <div class="ui dropdown">
+  <div class="ui compact dropdown">
     <span class="text">
       <span class="ui blue  tiny header">@lang('lang.header-inst')</span>
     </span>
     <i class="dropdown icon"></i>
     <div class="menu">
-      <a class="item"> Le Conseil Consultatif de la Jeunesse Africaine</a>
+      <a class="item"> Le Conseil Consultatif de <br> la Jeunesse Africaine</a>
     </div>
   </div>
 </div>
