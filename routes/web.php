@@ -19,4 +19,6 @@ Auth::routes();
 Route::resource('news', 'NewsController');
 Route::resource('events', 'EventsController');
 Route::resource('videos', 'YoutubevideosController');
+Route::resource('articles', 'ArticlesController');
+
 
