@@ -10,7 +10,7 @@ class NewsController extends Controller
 {
 	 public function __construct()
     {
-        $this->middleware('auth','bugfree');
+        $this->middleware(['auth','bugfree']);
     }
 
     public function index()
