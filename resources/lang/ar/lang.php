@@ -64,6 +64,8 @@ return [
  'register' => 'ﺗﺴﺠﻴﻞ',
 // 
  'footer_contact' => 'اﺗﺼﻞ ﺑﻨﺎ',
+  'footer_articles' => 'مقالاتنا',
+ 
  'footer_presse_space' => 'ﻏﺮﻓﺔ اﻟﺼﺤﺎﻓﺔ',
  'footer_reclamation' => 'ﺷﻜﻮﻯ',
  'footer_team' => 'ﻓﺮﻳﻖ اﻟﻌﻤﻞ',
