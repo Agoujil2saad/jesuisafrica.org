@@ -61,6 +61,7 @@
                         
                     <a href="{{ route('login') }}" class="ui inverted button ">Espace Admin</a>
                     @else
+                    
                     <a href="{{ route('logout') }}" class="ui inverted button"
                         onclick="event.preventDefault();
                         document.getElementById('logout-form').submit();">

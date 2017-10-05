@@ -119,18 +119,18 @@ Rehausser le niveau de prise de conscience chez les jeunes et les inciter à as
 </li><ul>',
  
 'twitter' => 'Twitter',
-'message_roi' => 'Discours de S.M le Roi Mohammed VI : <br> «Nous sommes également conscients de notre volonté de créer des partenariats productifs avec eux, en fonction d\'investissements coordonnés et de programmes de développement entre les secteurs public et privé dans les pays concernés. Ceux qui connaissent la vérité et favorisent les exagérations, que le Maroc dépensent de l\'argent sur l\'Afrique, au lieu de dépenser sur les Marocains, ils ne veulent pas l\'intérêt du pays»',
+'message_roi' => 'Discours de S.M le Roi Mohammed VI : <br> «Nous sommes également conscients de notre volonté de créer des partenariats productifs avec eux, en fonction d\'investissements coordonnés et de programmes de développement entre les secteurs publics et privés dans les pays concernés. Ceux qui connaissent la vérité et favorisent les exagérations, que le Maroc dépense de l\'argent sur l\'Afrique, au lieu de dépenser sur les Marocains, ne veulent pas l\'intérêt du pays»',
 'slide2' => 'Le 1er Forum du Dialogue et de l’Investissement Africain <br>
     Sur le thème <br>
     « L’Afrique, coexistence et civilisation ».<br>
     29 – 30 Mars 2017 à Meknès',
 
 'slide5' => 'Roger Milla , Amine Rbati , Youssef Mokhtari, sont des  Ambassadeurs de l\'association internationale Clé de la Paix pour le Développement et la Solidarité.Ils soutiennent le projet d\'Académie Panafricaine de Football.',
-'slide1_titre' => 'S.M le Roi Mohammed VI',
-'slide2_titre' => 'Forum du dialogue et de l\'investissement',
-'slide3_titre' => 'Conseil Consultatif de la Jeunesse Africaine',
-'slide4_titre' => 'La Caravane',
-'slide5_titre' => 'Académie panafricaine de football',
+'slide1_titre' => 'S.M le Roi <br> Mohammed VI',
+'slide2_titre' => 'Forum du dialogue <br> et de l\'investissement',
+'slide3_titre' => 'Conseil Consultatif de <br>  la Jeunesse Africaine',
+'slide4_titre' => 'Caravane <br> de la paix',
+'slide5_titre' => 'Académie panafricaine <br> de football',
 'presse' => 'Espace Presse',
 'media_l' => 'Médiathèque',
 'tv_l' => 'TV',

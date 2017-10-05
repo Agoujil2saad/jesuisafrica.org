@@ -14,6 +14,7 @@
 			@endforeach	
 		</div>
 	</div>
+
 	<div class="eleven wide column">
 
 		<h1 class="ui header">
@@ -26,7 +27,7 @@
 
 	</div>
 	<div class="one wide column">
-		<a href="{{url()->previous()}}" class="ui green button"><i class="  left chevron icon"></i></a>
+		<a href="/articles" class="ui green button"><i class="  left chevron icon"></i></a>
 	</div>
 </div>
 
