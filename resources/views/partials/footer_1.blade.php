@@ -28,6 +28,7 @@
                 <div class="ui inverted link list" id="footer_items">
                     <a href="/qui_sommes_nous" class="item">@lang('lang.header_us')</a>
                     <a href="/contact" class="item">@lang('lang.footer_contact')</a>
+                    <a href="/articles" class="item">@lang('lang.footer_articles')</a>
                     {{--     <a href="/team" class="item">@lang('lang.footer_team')</a> --}}
                 </div>
             </div>

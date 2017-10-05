@@ -12,9 +12,9 @@ class ArticlesController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-     public function index()
+    public function index()
     {
-        $articles = Article::all();
+        $articles = Article::orderby('id', 'desc')->paginate(20);
         return view('articles.index', compact('articles'));
     }
 
@@ -38,16 +38,18 @@ class ArticlesController extends Controller
     {
         $this->validate($request, [
             "title"              =>'required',
-            "description"       =>'required',
+            "description"        =>'required',
+            "content"            =>'required',
         ]);
 
- 
-            Article::create([
-            'title'          => request('title'),
-            'description'   => request('description'),
-            ]);
 
-            return redirect()->route('articles.index')->with('status', 'L\'article est créé');
+        Article::create([
+            'title'         => request('title'),
+            'description'   => request('description'),
+            'content'       => request('content'),
+        ]);
+
+        return redirect()->route('articles.index')->with('status', 'L\'article est créé');
     }
 
     /**
@@ -58,8 +60,9 @@ class ArticlesController extends Controller
      */
     public function show($id)
     {
-     $article = Article::findOrFail($id);
-     return view('articles.show',compact('article'));
+        $articles = Article::orderby('id', 'desc')->paginate(20);
+        $article = Article::findOrFail($id);
+        return view('articles.show',compact('article','articles'));
     }
 
     /**
@@ -94,8 +97,8 @@ class ArticlesController extends Controller
     public function destroy($id)
     {
        $article = Article::findOrFail($id);
-        $article->delete();
-        
-        return redirect()->route('articles.index')->with('status', 'L\'article est supprimé.');
-    }
+       $article->delete();
+
+       return redirect()->route('articles.index')->with('status', 'L\'article est supprimé.');
+   }
 }

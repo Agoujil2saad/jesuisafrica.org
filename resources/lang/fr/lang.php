@@ -64,6 +64,7 @@ return [
   'description' => 'description',
   'register' => 'S\'inscrire',
   'footer_contact' => 'Contactez-nous',
+  'footer_articles' => 'Nos articles',
   'footer_presse_space' => 'Espace de presse',
   'footer_reclamation' => 'Réclamation',
   'footer_team' => 'L\'équipe',
