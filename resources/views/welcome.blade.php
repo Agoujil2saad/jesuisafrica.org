@@ -2,7 +2,8 @@
 @section('styles')
 <style type="text/css">
 /*bda*/
-#return-to-top {
+#return-to-top 
+{
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -152,21 +153,21 @@ ul li{
                 @if(!Auth::guest())
                 <div class="ui  buttons">
 
-                 {!! Form::open(['method' => 'DELETE', 'route' => ['events.destroy', $event->id] ]) !!}
-                 {!! Form::submit('Supprimer', ['class' => ' ui red button']) !!}
-                 {!! Form::close() !!}
-                 <div class="or"></div>
+                   {!! Form::open(['method' => 'DELETE', 'route' => ['events.destroy', $event->id] ]) !!}
+                   {!! Form::submit('Supprimer', ['class' => ' ui red button']) !!}
+                   {!! Form::close() !!}
+                   <div class="or"></div>
 
-                 <a class=" ui blue button" href="{{url('/events/'.$event->id.'/edit')}}">Edit</a>   
-             </div>   
+                   <a class=" ui blue button" href="{{url('/events/'.$event->id.'/edit')}}">Edit</a>   
+               </div>   
 
 
 
-             @endif
-         </div>
-     </div>
-     @endforeach
- </div>
+               @endif
+           </div>
+       </div>
+       @endforeach
+   </div>
 </div>
 <div class="row">
     <CENTER>
@@ -193,9 +194,9 @@ ul li{
                 {{ $new->description }}
             </div>
             <div class="extra content">
-             <a  target="_blank" href="{{ $new->lien }}">@lang('lang.learn_more')</a>
-             @if(!Auth::guest())
-             <div class="ui buttons">      
+               <a  target="_blank" href="{{ $new->lien }}">@lang('lang.learn_more')</a>
+               @if(!Auth::guest())
+               <div class="ui buttons">      
                 {!! Form::open(['method' => 'DELETE', 'route' => ['news.destroy', $new->id] ]) !!}
                 {!! Form::submit('Supprimer', ['class' => 'ui red button left floated']) !!}
                 {!! Form::close() !!}
@@ -235,13 +236,13 @@ ul li{
         </div>
         @if(Auth::check())
         <div class="ui buttons">
-         <a class="ui blue tiny button" style="margin-bottom:2em;" href="/videos/create">Ajouter une Vidéo</a>
-         <div class="or"></div>
-         <a class="ui green tiny button" style="margin-bottom:2em;" href="/videos">Modifier une Vidéo</a>
-     </div>
+           <a class="ui blue tiny button" style="margin-bottom:2em;" href="/videos/create">Ajouter une Vidéo</a>
+           <div class="or"></div>
+           <a class="ui green tiny button" style="margin-bottom:2em;" href="/videos">Modifier une Vidéo</a>
+       </div>
 
-     @endif
- </center>
+       @endif
+   </center>
 </div>
 @endsection
 @section('videos')
