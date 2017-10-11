@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Events;
 use App\Jobs\ChangeLocale;
+use App\News;
+use App\Partner;
+use App\Youtubevideos;
 use Illuminate\Http\Request;
 use Mail;
-use App\News;
-use App\Events;
-use App\Youtubevideos;
 
 class StaticPagesController extends Controller
 {
@@ -22,9 +23,10 @@ class StaticPagesController extends Controller
 	{
 		$active_page='/';
 		$news = News::all();
+		$partners =  Partner::all();
 		$events = Events::all();
 		$videos = Youtubevideos::all();
-		return view('welcome',compact('active_page', 'news', 'events', 'videos'));
+		return view('welcome',compact('active_page', 'news', 'events', 'videos','partners'));
 	}
 	public function contact()
 	{

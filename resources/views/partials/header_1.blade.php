@@ -54,8 +54,8 @@ if (! isset($active_page)) {
   </span>
   <i class="dropdown icon"></i>
   <div class="menu">
-    <div class="item">Caravane culturelle  <br>et 
-    de l'intégration africaine</div>
+    <a  target="_blank" href="http://caravane.jesuisafrica.org" class="item">Caravane culturelle  <br>et 
+    de l'intégration africaine</a>
     <div class="item"> Forum du dialogue <br>et de l'investissement</div>
     <div class="item">  Académie Panafricaine  <br>de Football </div>
     <div class="item"> Radio-Tv <br>( voice of Africa )</div>
@@ -161,7 +161,7 @@ if (! isset($active_page)) {
   </span>
   <i class="dropdown icon"></i>
   <div class="menu">
-    <div class="item">Caravane culturelle et de l'intégration africaine</div>
+    <a class="item" target="_blank" href="http://caravane.jesuisafrica.org">Caravane culturelle et de l'intégration africaine</a>
     <div class="item"> Forum du dialogue et de l'investissement</div>
     <div class="item"> Académique Panafricaine de Football</div>
     <div class="item"> Radio-Tv ( voice of Africa )</div>

@@ -1,6 +1,6 @@
 <?php
 
-Route::get('/', 'StaticPagesController@index');
+Route::get('/', 'StaticPagesController@index')->name('welcome');
 Route::get('/contact', 'StaticPagesController@contact');
 Route::get('/photo', 'StaticPagesController@photos');
 Route::get('/qui_sommes_nous', 'StaticPagesController@qui_sommes_nous');
@@ -20,5 +20,6 @@ Route::resource('news', 'NewsController');
 Route::resource('events', 'EventsController');
 Route::resource('videos', 'YoutubevideosController');
 Route::resource('articles', 'ArticlesController');
+Route::resource('partners', 'PartnersController');
 
 

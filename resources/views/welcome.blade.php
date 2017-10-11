@@ -218,15 +218,47 @@ ul li{
     </center>
 </div>
 <div class="row">
-    <div class="nine wide column">
-        <div class="ui inverted blue segment">
-            <h1 style="padding:2em 0;text-align:center;">
-                <i class='inverted large handshake icon'></i>
-                <br>
-                Devenir Partenaire
-            </h1>
+    <div class="twelve wide column">
+        @if(count($partners)==0)
+        <h1 class="ui inverted blue segment very padded header">Devenir Partenaire</h1>
+        @else
+        <div class="ui cards  segment">
+            @foreach($partners as $partner)
+            <div class="card">
+               <div class="image">
+
+                <a href="{{$partner->lien}}" target="_blank">
+                    <img src="{{asset('images/partners/'.$partner->photo)}}" class="ui small centered image">
+                </a>
+            </div>
+            @if(Auth::check())
+            <div class="content">
+
+                <center>
+
+                    {!! Form::open(['method' => 'DELETE', 'route' => ['partners.destroy', $partner->id] ]) !!}
+                    <button type="submit" class="ui  icon red button"> <i class="trash icon"></i></button>
+                    {!! Form::close() !!}
+                </center>
+            </div>
+            @endif
+
         </div>
+        @endforeach
     </div>
+    @endif
+
+    
+</div>
+</div>
+
+<div class="row"> 
+    @if(Auth::check())
+        <center>
+
+            <a class="ui blue very padded button" href="/partners/create"><i class="plus icon"></i>Ajouter un partenaire</a>
+        </center>
+        @endif
 </div>
 <div class="row">
     <center>
