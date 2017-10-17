@@ -193,19 +193,19 @@
 	<div class="four wide column">
 		<center id="sticker">
 			<div class="ui mini vertical labeled icon menu">
-				<a class="item" href="/photos#galery1">
+				<a class="item" href="/photo#galery1">
 					<i class="camera retro icon blue"></i>
 					 La création  du conseil consultatif de la jeunesse africaine et  Ftour Ramadan entre les religions
 				</a>
-				<a class="item" href="/photos#galery2">
+				<a class="item" href="/photo#galery2">
 					<i class="camera retro icon blue"></i>
 					 Visite du président du association clé de la paix aux plusieurs consulats africains 
 				</a>
-				<a class="item" href="/photos#galery3">
+				<a class="item" href="/photo#galery3">
 					<i class="camera retro icon blue"></i>
 						Lancement de l’académie panafricaine de sport Meknès
 				</a>
-				<a class="item" href="/photos#galery4">
+				<a class="item" href="/photo#galery4">
 					<i class="camera retro icon blue"></i>
 					Lancement de l’académie panafricaine de sport Meknès
 				</a>

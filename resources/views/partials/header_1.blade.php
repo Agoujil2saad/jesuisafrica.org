@@ -56,7 +56,7 @@ if (! isset($active_page)) {
   <div class="menu">
     <a  target="_blank" href="http://caravane.jesuisafrica.org" class="item">Caravane culturelle  <br>et 
     de l'intégration africaine</a>
-    <div class="item"> Forum du dialogue <br>et de l'investissement</div>
+    <a class="item" target="_blank" href="http://forum.jesuisafrica.org">Forum du dialogue <br>et de l'investissement</a>
     <div class="item">  Académie Panafricaine  <br>de Football </div>
     <div class="item"> Radio-Tv <br>( voice of Africa )</div>
     <div class="item"> Institut des Relations <br>  Economiques Maroco-Africaines</div>
@@ -162,7 +162,7 @@ if (! isset($active_page)) {
   <i class="dropdown icon"></i>
   <div class="menu">
     <a class="item" target="_blank" href="http://caravane.jesuisafrica.org">Caravane culturelle et de l'intégration africaine</a>
-    <div class="item"> Forum du dialogue et de l'investissement</div>
+    <a class="item" target="_blank" href="http://forum.jesuisafrica.org"> Forum du dialogue et de l'investissement</a>
     <div class="item"> Académique Panafricaine de Football</div>
     <div class="item"> Radio-Tv ( voice of Africa )</div>
     <div class="item"> Institut des Relations Economiques Maroco-Africaines</div>
